@@ -32,6 +32,7 @@ class Users extends CActiveRecord {
             array('email, profile_image_url', 'length', 'max' => 100),
             array('password', 'length', 'max' => 300),
             array('motto', 'safe'),
+            array('email', 'email'),
             // The following rule is used by search().
             // @todo Please remove those attributes that should not be searched.
             array('username, email, password, profile_image_url, motto, register_date', 'safe', 'on' => 'search'),

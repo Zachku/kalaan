@@ -6576,3 +6576,33 @@ in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)
 2014/05/22 23:17:29 [warning] [application] Failed to set unsafe attribute "url" of "Lures".
 in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php (143)
 in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)
+2014/05/22 23:26:02 [warning] [application] Failed to set unsafe attribute "url" of "Lures".
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php (143)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)
+2014/05/22 23:26:32 [error] [php] unlink(C:\Users\Juho\Dropbox\htdocs\kalaan\protected\..\images\catch_images\\images\catch_images\760910037.png) [<a href='function.unlink'>function.unlink</a>]: No such file or directory (C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php:116)
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(286): CatchesController->runAction()
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(265): CatchesController->runActionWithFilters()
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): CatchesController->run()
+#4 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CWebApplication->run()
+REQUEST_URI=/kalaan/index.php/catches/delete_image
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php (116)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)
+2014/05/22 23:32:01 [error] [php] unlink(C:\Users\Juho\Dropbox\htdocs\kalaan\protected\..\images\catch_images\263696241.png) [<a href='function.unlink'>function.unlink</a>]: No such file or directory (C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php:116)
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(286): CatchesController->runAction()
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(265): CatchesController->runActionWithFilters()
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): CatchesController->run()
+#4 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CWebApplication->run()
+REQUEST_URI=/kalaan/index.php/catches/delete_image
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php (116)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)
+2014/05/22 23:32:21 [warning] [application] Failed to set unsafe attribute "url" of "Lures".
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php (143)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)
