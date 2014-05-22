@@ -1,7 +1,6 @@
 <?php
 
 class CatchesController extends Controller {
-
     /**
      * Specifies the access control rules.
      * This method is used by the 'accessControl' filter.
@@ -126,7 +125,8 @@ class CatchesController extends Controller {
     public function actionDelete_image() {
         $catch = Catches::model()->findByPk($_POST['catch_id']);
         if ($catch->user_id === Yii::app()->user->getId()) {
-            unlink(Yii::app()->basePath . DIRECTORY_SEPARATOR . '..' . $catch->image_url);
+            $url = DIRECTORY_SEPARATOR . 'images' . DIRECTORY_SEPARATOR . 'catch_images' . DIRECTORY_SEPARATOR;
+            unlink(Yii::app()->basePath . DIRECTORY_SEPARATOR . '..' . $url . $catch->image_url);
             $catch->image_url = NULL;
             $catch->save();
             $this->redirect(array('view', 'id' => $catch->catch_id));
@@ -154,8 +154,6 @@ class CatchesController extends Controller {
         $lure = ($catch->lure_id ? Lures::model()->findByPk($catch->lure_id) : new Lures());
         if ($catch->isOwner() && isset($_POST['Lures'])) {
             $lure->attributes = $_POST['Lures'];
-            echo CActiveForm::validate($model);
-            Yii::app()->end();
             if ($lure->save()) {
                 $catch->lure_id = $lure->lure_id;
                 $catch->save();
