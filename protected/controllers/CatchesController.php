@@ -52,7 +52,7 @@ class CatchesController extends Controller {
 
     public function actionView($id, $message = null) {
         $catch = Catches::model()->findByPk($id);
-
+        
         if ($catch->lure_id != NULL) {
             $lure = Lures::model()->findByPk($catch->lure_id);
         } else {
@@ -64,7 +64,6 @@ class CatchesController extends Controller {
         } else {
             $lake = new Lakes;
         }
-
         $this->render('view', array(
             'catch' => $catch,
             'lure' => $lure,
@@ -146,7 +145,7 @@ class CatchesController extends Controller {
                 $catch->lure_id = $lure->lure_id;
                 $catch->save();
                 $this->renderPartial('_lure_form', array('lure' => $lure, 'catch' => $catch, 'lureMessage' => 'Success'));
-            }
+            } else $this->renderPartial('_lure_form', array('lure' => $lure, 'catch' => $catch, 'lureMessage' => 'Something went wrong'));
         }
         Yii::app()->end();
     }
@@ -157,14 +156,13 @@ class CatchesController extends Controller {
     public function actionAdd_lake($id) {
         $catch = Catches::model()->findByPk($id);
         $lake = ($catch->lake_id ? Lakes::model()->findByPk($catch->lake_id) : new Lakes());
-
         if ($catch->isOwner() && isset($_POST['Lakes'])) {
             $lake->attributes = $_POST['Lakes'];
             if ($lake->save()) {
                 $catch->lake_id = $lake->lake_id;
                 $catch->save();
                 $this->renderPartial('_lake_form', array('lake' => $lake, 'catch' => $catch, 'lakeMessage' => 'Success'));
-            }
+            } else{$this->renderPartial('_lake_form', array('lake' => $lake, 'catch' => $catch, 'lakeMessage' => 'Something went wrong'));}
         }
     }
 
@@ -194,4 +192,6 @@ class CatchesController extends Controller {
       );
       }
      */
+    
+   
 }

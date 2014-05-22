@@ -14,7 +14,7 @@
         <?php
         $form = $this->beginWidget('CActiveForm', array(
             'enableAjaxValidation' => TRUE,
-            'id' => 'test-form',
+            'id' => 'lure-form',
         ));
         ?>
         <?php if (isset($lureMessage)) { ?> 

@@ -13,7 +13,8 @@
 
         <?php
         $form = $this->beginWidget('CActiveForm', array(
-            'enableAjaxValidation' => false,
+            'enableAjaxValidation' => true,
+            'id' => 'lake_form'
         ));
         ?>
 
