@@ -53,22 +53,11 @@ class CatchesController extends Controller {
     public function actionView($id, $message = null) {
         $catch = Catches::model()->findByPk($id);
 
-        /*
-         * listData for lure dropdownlist
-         */
-        $lures = Lures::model()->findAll();
-        $lure_data = CHtml::listData($lures, 'lure_id', 'model');
-
         if ($catch->lure_id != NULL) {
             $lure = Lures::model()->findByPk($catch->lure_id);
         } else {
             $lure = new Lures;
         }
-        /*
-         * listData for lake dropdownlist
-         */
-        $lakes = Lakes::model()->findAll(array('select' => 'concat(town, " ", lake_name) as data'));
-        $lake_data = CHtml::listData($lakes, 'lake_id', 'data');
 
         if ($catch->lake_id != NULL) {
             $lake = Lakes::model()->findByPk($catch->lake_id);
@@ -80,7 +69,6 @@ class CatchesController extends Controller {
             'catch' => $catch,
             'lure' => $lure,
             'lake' => $lake,
-            'lake_data' => $lake_data,
             'message' => $message,
         ));
     }
@@ -157,7 +145,7 @@ class CatchesController extends Controller {
             if ($lure->save()) {
                 $catch->lure_id = $lure->lure_id;
                 $catch->save();
-                $this->renderPartial('_lure_form', array('lure' => $lure, 'catch' => $catch));
+                $this->renderPartial('_lure_form', array('lure' => $lure, 'catch' => $catch, 'lureMessage' => 'Success'));
             }
         }
         Yii::app()->end();
@@ -175,7 +163,7 @@ class CatchesController extends Controller {
             if ($lake->save()) {
                 $catch->lake_id = $lake->lake_id;
                 $catch->save();
-                $this->renderPartial('_lake_form', array('lake' => $lake, 'catch' => $catch));
+                $this->renderPartial('_lake_form', array('lake' => $lake, 'catch' => $catch, 'lakeMessage' => 'Success'));
             }
         }
     }

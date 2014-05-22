@@ -17,9 +17,13 @@
         ));
         ?>
 
-        <p class="note">Fields with <span class="required">*</span> are required.</p>
-
-
+        
+        <?php if (isset($lakeMessage)) { ?> 
+            <div class ="successMessage">
+                <?php echo $lakeMessage; ?> 
+            </div>
+        <?php } ?> 
+        
         <div class = 'row'>
             <?php echo $form->labelEx($lake, 'lake_name'); ?>
             <?php echo $form->textField($lake, 'lake_name'); ?>

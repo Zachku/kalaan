@@ -14,11 +14,14 @@
         <?php
         $form = $this->beginWidget('CActiveForm', array(
             'enableAjaxValidation' => TRUE,
-            'id'=>'test-form',
+            'id' => 'test-form',
         ));
         ?>
-
-        <p class="note">Fields with <span class="required">*</span> are required.</p>
+        <?php if (isset($lureMessage)) { ?> 
+            <div class ="successMessage">
+                <?php echo $lureMessage; ?> 
+            </div>
+        <?php } ?> 
 
 
         <div class = 'row'>
