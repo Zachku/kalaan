@@ -2,6 +2,7 @@
 $(document).ready(function() {
     $("#SelectLake").hide();
     $("#SelectLure").hide();
+    $("#SelectFish").hide();
 });
 
 $("#SelectLakeLink").live('click', function() {
@@ -16,4 +17,11 @@ $("#SelectLureLink").live('click', function() {
         $("#SelectLure").fadeIn();
     else
         $("#SelectLure").fadeOut();
+});
+
+$("#SelectFishLink").live('click', function() {
+    if ($("#SelectFish").is(":hidden"))
+        $("#SelectFish").fadeIn();
+    else
+        $("#SelectFish").fadeOut();
 });

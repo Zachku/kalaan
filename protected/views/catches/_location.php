@@ -17,7 +17,7 @@ $mapTypeControlOptions = array(
 $gMap->mapTypeControlOptions = $mapTypeControlOptions;
 
 // Preparing InfoWindow with information about our marker.
-$info_window_a = new EGMapInfoWindow("<div class='gmaps-label' style='color: #000;'>Hi! I'm your marker!</div>");
+$info_window_a = new EGMapInfoWindow("<div class='gmaps-label' style='color: #000;'>Catch</div>");
 
 // Setting up an icon for marker.
 $icon = new EGMapMarkerImage("http://google-maps-icons.googlecode.com/files/car.png");

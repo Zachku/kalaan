@@ -1,6 +1,7 @@
 <?php
 
 class CatchesController extends Controller {
+
     /**
      * Specifies the access control rules.
      * This method is used by the 'accessControl' filter.
@@ -13,7 +14,7 @@ class CatchesController extends Controller {
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions' => array('create', 'add_image', 'delete', 'delete_image', 'add_coords', 'add_lure'),
+                'actions' => array('create', 'add_image', 'delete', 'delete_image', 'add_coords', 'add_lure', 'add_fish', 'add_date'),
                 'users' => array('@'),
             ),
             array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -37,11 +38,10 @@ class CatchesController extends Controller {
 
     public function actionCreate() {
         $model = new Catches;
+        $model->date = date("Y-m-d H:i:s");
         if ($model->save()) {
             $this->redirect(array('view', 'id' => $model->catch_id));
         }
-        else
-            echo 'perse';
         echo Yii::app()->user->getId();
         ;
     }
@@ -52,27 +52,49 @@ class CatchesController extends Controller {
 
     public function actionView($id, $message = null) {
         $catch = Catches::model()->findByPk($id);
-        
-        if ($catch->lure_id != NULL) {
-            $lure = Lures::model()->findByPk($catch->lure_id);
-        } else {
-            $lure = new Lures;
+        if ($catch->isOwner()) {
+            if ($catch->lure_id != NULL) {
+                $lure = Lures::model()->findByPk($catch->lure_id);
+            } else {
+                $lure = new Lures;
+            }
+            if ($catch->fish_id != NULL) {
+                $fish = Fishes::model()->findByPk($catch->fish_id);
+            } else {
+                $fish = new Fishes;
+            }
+            if ($catch->lake_id != NULL) {
+                $lake = Lakes::model()->findByPk($catch->lake_id);
+            } else {
+                $lake = new Lakes;
+            }
+            $this->render('view', array(
+                'catch' => $catch,
+                'lure' => $lure,
+                'fish' => $fish,
+                'lake' => $lake,
+                'message' => $message,
+            ));
         }
+        else
+            $this->redirect(array('catches/viewasaquest', 'id' => $id));
+    }
 
-        if ($catch->lake_id != NULL) {
-            $lake = Lakes::model()->findByPk($catch->lake_id);
-        } else {
-            $lake = new Lakes;
-        }
-        $this->render('view', array(
+    public function actionViewasaquest($id) {
+        $catch = Catches::model()->findByPk($id);
+        $lure = Lures::model()->findByPk($catch->lure_id);
+        $fish = Fishes::model()->findByPk($catch->fish_id);
+        $lake = Lakes::model()->findByPk($catch->lake_id);
+        
+        $this->render('viewasaquest', array(
             'catch' => $catch,
             'lure' => $lure,
-            'lake' => $lake,
-            'message' => $message,
+            'fish' => $fish,
+            'lake' => $lake
         ));
     }
 
-    /*
+    /* '
      * Delete catch
      */
 
@@ -145,7 +167,9 @@ class CatchesController extends Controller {
                 $catch->lure_id = $lure->lure_id;
                 $catch->save();
                 $this->renderPartial('_lure_form', array('lure' => $lure, 'catch' => $catch, 'lureMessage' => 'Success'));
-            } else $this->renderPartial('_lure_form', array('lure' => $lure, 'catch' => $catch, 'lureMessage' => 'Something went wrong'));
+            }
+            else
+                $this->renderPartial('_lure_form', array('lure' => $lure, 'catch' => $catch, 'lureMessage' => 'Something went wrong'));
         }
         Yii::app()->end();
     }
@@ -162,7 +186,40 @@ class CatchesController extends Controller {
                 $catch->lake_id = $lake->lake_id;
                 $catch->save();
                 $this->renderPartial('_lake_form', array('lake' => $lake, 'catch' => $catch, 'lakeMessage' => 'Success'));
-            } else{$this->renderPartial('_lake_form', array('lake' => $lake, 'catch' => $catch, 'lakeMessage' => 'Something went wrong'));}
+            } else {
+                $this->renderPartial('_lake_form', array('lake' => $lake, 'catch' => $catch, 'lakeMessage' => 'Something went wrong'));
+            }
+        }
+    }
+
+    /**
+     * Create or update fish
+     */
+    public function actionAdd_fish($id) {
+        $catch = Catches::model()->findByPk($id);
+        $fish = ($catch->fish_id ? Fishes::model()->findByPk($catch->fish_id) : new Fishes());
+        if ($catch->isOwner() && isset($_POST['Fishes'])) {
+            $fish->attributes = $_POST['Fishes'];
+            if ($fish->save()) {
+                $catch->fish_id = $fish->fish_id;
+                $catch->save();
+                $this->renderPartial('_fish_form', array('fish' => $fish, 'catch' => $catch, 'fishMessage' => 'Success'));
+            } else {
+                $this->renderPartial('_fish_form', array('fish' => $fish, 'catch' => $catch, 'fishMessage' => 'There is something missing.'));
+            }
+        }
+    }
+
+    /**
+     * Add or change date
+     */
+    public function actionAdd_date($id) {
+        $catch = Catches::model()->findByPk($id);
+        if ($catch->isOwner()) {
+            $catch->date = $_POST['catch_date'];
+            $catch->save();
+            $this->renderPartial('_date', array('catch' => $catch), false, true);
+            Yii::app()->end();
         }
     }
 
@@ -192,6 +249,4 @@ class CatchesController extends Controller {
       );
       }
      */
-    
-   
 }

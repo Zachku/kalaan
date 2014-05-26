@@ -227,3 +227,12 @@ div.search-form
 {
 	background: #80CFFF;
 }
+
+
+
+#maponqview{
+    float:right;
+}
+#imageonqview{
+    float:left;
+}

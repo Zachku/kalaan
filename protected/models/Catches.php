@@ -127,13 +127,17 @@ class Catches extends CActiveRecord {
     public function beforeSave() {
         if (!Yii::app()->user->isGuest) {
             $this->user_id = Yii::app()->user->getId();
+            if (isset($this->date)) {
+                $this->date = date('Y-m-d', strtotime($this->date));
+            }
             return true;
         } else {
             return false;
         }
     }
-    
+
     public function isOwner() {
         return $this->user_id == Yii::app()->user->getId();
     }
+
 }
