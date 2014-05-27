@@ -3,7 +3,7 @@
     if ($catch->fish_id != null)
         echo "Fish: " . $fish->name;
     else
-        echo 'There is no lake selected yet.';
+        echo 'There is no fish selected yet.';
     ?> 
 </p>
 
@@ -18,16 +18,16 @@
         ));
         ?>
 
-        
+
         <?php if (isset($fishMessage)) { ?> 
             <div class ="successMessage">
                 <?php echo $fishMessage; ?> 
             </div>
         <?php } ?> 
-        
+
         <div class = 'row'>
             <?php echo $form->labelEx($fish, 'name'); ?>
-            <?php echo $form->textField($fish, 'name'); ?>
+            <?php echo CHtml::activeDropDownList($fish, 'fish_id', $fishes_list);?>
             <?php echo $form->error($fish, 'name'); ?>
         </div>
 

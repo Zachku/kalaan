@@ -1,5 +1,5 @@
 <?php if($catch->date != NULL && $catch->date != NULL) ?>
-<h1>Catch  <?php if($catch->date != NULL) echo ' of' . $catch->date; ?>: <?php if($fish != NULL) echo $fish->name; ?> </h1>
+<h1>User's <?php echo $owner->username; ?> catch  <?php if($catch->date != NULL) echo ' of ' . $catch->date; ?>: <?php if($fish != NULL) echo $fish->name; ?> </h1>
 <?php
 /*
  * Fish

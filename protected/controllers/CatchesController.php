@@ -63,6 +63,10 @@ class CatchesController extends Controller {
             } else {
                 $fish = new Fishes;
             }
+            
+            $fishes_model = Fishes::model()->findAll();
+            $fishes_list = CHtml::listData($fishes_model, 'fish_id', 'name');
+            
             if ($catch->lake_id != NULL) {
                 $lake = Lakes::model()->findByPk($catch->lake_id);
             } else {
@@ -74,6 +78,7 @@ class CatchesController extends Controller {
                 'fish' => $fish,
                 'lake' => $lake,
                 'message' => $message,
+                'fishes_list' => $fishes_list,
             ));
         }
         else
@@ -85,12 +90,13 @@ class CatchesController extends Controller {
         $lure = Lures::model()->findByPk($catch->lure_id);
         $fish = Fishes::model()->findByPk($catch->fish_id);
         $lake = Lakes::model()->findByPk($catch->lake_id);
-        
+        $owner = Users::model()->findByPk($catch->user_id);
         $this->render('viewasaquest', array(
             'catch' => $catch,
             'lure' => $lure,
             'fish' => $fish,
-            'lake' => $lake
+            'lake' => $lake,
+            'owner' => $owner,
         ));
     }
 
@@ -197,15 +203,16 @@ class CatchesController extends Controller {
      */
     public function actionAdd_fish($id) {
         $catch = Catches::model()->findByPk($id);
-        $fish = ($catch->fish_id ? Fishes::model()->findByPk($catch->fish_id) : new Fishes());
+        $fish = Fishes::model()->findByPk($_POST['Fishes']['fish_id']);
         if ($catch->isOwner() && isset($_POST['Fishes'])) {
-            $fish->attributes = $_POST['Fishes'];
-            if ($fish->save()) {
-                $catch->fish_id = $fish->fish_id;
-                $catch->save();
-                $this->renderPartial('_fish_form', array('fish' => $fish, 'catch' => $catch, 'fishMessage' => 'Success'));
+            $fishes_model = Fishes::model()->findAll();
+            $fishes_list = CHtml::listData($fishes_model, 'fish_id', 'name');
+            
+            $catch->fish_id =  $_POST['Fishes']['fish_id'];
+            if ($catch->save()) {
+                $this->renderPartial('_fish_form', array('fish' => $fish, 'catch' => $catch, 'fishes_list' => $fishes_list, 'fishMessage' => 'Success'));              
             } else {
-                $this->renderPartial('_fish_form', array('fish' => $fish, 'catch' => $catch, 'fishMessage' => 'There is something missing.'));
+                $this->renderPartial('_fish_form', array('fish' => $fish, 'catch' => $catch, 'fishes_list' => $fishes_list,'fishMessage' => 'There is something missing.'));
             }
         }
     }

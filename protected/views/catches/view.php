@@ -1,7 +1,7 @@
 
 <?php Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/view.js', CClientScript::POS_END); ?>
 
-<h2>View as a quest <?php echo CHtml::link('here', array('catches/viewasaquest', 'id' => $catch->catch_id));?></h2>
+<p>View this catch as a quest <?php echo CHtml::link('here', array('catches/viewasaquest', 'id' => $catch->catch_id));?></p>
 <?php if ($catch->image_url === null) { ?>
     <h2>Add Image of your catch</h2>
     <?php echo CHtml::form('add_image', 'post', array('enctype' => 'multipart/form-data')); ?> 
@@ -27,7 +27,7 @@
  */
 ?>
 <div id ="fish">
-    <?php $this->renderPartial('_fish_form', array('fish' => $fish, 'catch' => $catch)); ?>
+    <?php $this->renderPartial('_fish_form', array('fish' => $fish, 'catch' => $catch, 'fishes_list' => $fishes_list)); ?>
 </div>
 
 <?php
