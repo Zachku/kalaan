@@ -8327,3 +8327,58 @@ REQUEST_URI=/kalaan/index.php/users/my_profile
 in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\views\users\my_profile.php (8)
 in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\UsersController.php (58)
 in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)
+2014/05/28 18:25:21 [warning] [application] Failed to set unsafe attribute "url" of "Lures".
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php (171)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)
+2014/05/28 18:28:52 [warning] [application] Failed to set unsafe attribute "url" of "Lures".
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php (171)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)
+2014/05/28 18:28:55 [warning] [application] Failed to set unsafe attribute "url" of "Lures".
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php (171)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)
+2014/05/28 18:31:22 [warning] [application] Failed to set unsafe attribute "url" of "Lures".
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php (171)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)
+2014/05/28 18:31:37 [warning] [application] Failed to set unsafe attribute "url" of "Lures".
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php (171)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)
+2014/05/28 18:31:54 [warning] [application] Failed to set unsafe attribute "url" of "Lures".
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php (171)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)
+2014/05/28 18:32:31 [warning] [application] Failed to set unsafe attribute "url" of "Lures".
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php (171)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)
+2014/05/28 18:33:11 [error] [exception.CException] exception 'CException' with message 'CActiveForm has an extra endWidget() call in its view.' in C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CBaseController.php:210
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\protected\views\catches\_fish_form.php(46): CBaseController->endWidget()
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CBaseController.php(126): require('C:\Users\Juho\D...')
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Users\Juho\D...', Array, true)
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(869): CBaseController->renderFile('C:\Users\Juho\D...', Array, true)
+#4 C:\Users\Juho\Dropbox\htdocs\kalaan\protected\views\catches\view.php(64): CController->renderPartial('_fish_form', Array)
+#5 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CBaseController.php(126): require('C:\Users\Juho\D...')
+#6 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Users\Juho\D...', Array, true)
+#7 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(869): CBaseController->renderFile('C:\Users\Juho\D...', Array, true)
+#8 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#9 C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php(82): CController->render('view', Array)
+#10 [internal function]: CatchesController->actionView('34', NULL)
+#11 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(CatchesController), Array)
+#12 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(CatchesController), Object(ReflectionMethod), Array)
+#13 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#15 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): CController->run('view')
+#17 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController('catches/view')
+#18 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/kalaan/index.php/catches/34
+---
+2014/05/28 18:33:47 [warning] [application] Failed to set unsafe attribute "url" of "Lures".
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php (171)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)
+2014/05/28 18:35:44 [warning] [application] Failed to set unsafe attribute "url" of "Lures".
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php (171)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)
+2014/05/28 18:36:54 [warning] [application] Failed to set unsafe attribute "url" of "Lures".
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php (171)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)

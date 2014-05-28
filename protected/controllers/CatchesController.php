@@ -205,6 +205,9 @@ class CatchesController extends Controller {
         $catch = Catches::model()->findByPk($id);
         $fish = Fishes::model()->findByPk($_POST['Fishes']['fish_id']);
         if ($catch->isOwner() && isset($_POST['Fishes'])) {
+            if(isset($_POST['Catches']['weight'])){
+                $catch->weight = $_POST['Catches']['weight'];
+            }
             $fishes_model = Fishes::model()->findAll();
             $fishes_list = CHtml::listData($fishes_model, 'fish_id', 'name');
             

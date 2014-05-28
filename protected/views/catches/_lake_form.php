@@ -1,9 +1,12 @@
 <h2>Lake</h2>
 <p> <?php
-    if ($catch->lake_id != null)
-        echo "Town: " . $lake->town . " Lake: " . $lake->lake_name;
-    else
-        echo 'There is no lake selected yet.';
+    if ($catch->lake_id != null) {
+        echo "<p>Town: " . $lake->town . "</p>";
+        echo "<p>Lake: " . $lake->lake_name . '</p>';
+    }
+    else {
+    echo 'There is no lake selected yet.';
+    }
     ?> 
 </p>
 
@@ -18,13 +21,13 @@
         ));
         ?>
 
-        
+
         <?php if (isset($lakeMessage)) { ?> 
             <div class ="successMessage">
                 <?php echo $lakeMessage; ?> 
-            </div>
+            <div>
         <?php } ?> 
-        
+
         <div class = 'row'>
             <?php echo $form->labelEx($lake, 'lake_name'); ?>
             <?php echo $form->textField($lake, 'lake_name'); ?>

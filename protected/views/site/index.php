@@ -49,3 +49,14 @@
     $gMap->renderMap(array(), Yii::app()->language);
     ?>
 </div>
+<p>Above you can see all the cathces of our users. To see more information about specific catch, click the marker.</p>
+<p>You can zoom by scrolling.</p>
+
+<div id ="bestLures">
+    <h2>Top lures</h2>
+</div>
+
+
+<div id ="bestLakes">
+    <h2>Top lakes</h2>
+</div>

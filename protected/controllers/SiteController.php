@@ -28,6 +28,9 @@ class SiteController extends Controller {
          Yii::import('ext.egmap.*');
          
         $catches = Catches::model()->findAll();
+        
+        $topLures = Catches::model()->count();
+       
         // renders the view file 'protected/views/site/index.php'
         // using the default layout 'protected/views/layouts/main.php'
         $this->render('index', array('catches' => $catches));

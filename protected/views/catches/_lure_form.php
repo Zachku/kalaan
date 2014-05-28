@@ -1,7 +1,8 @@
 <h2>Lure</h2>
 <p> <?php
     if ($catch->lure_id) {
-        echo "Lure brand: " . $lure->brand . " Model: " . $lure->model;
+        echo "<p>Brand: " . $lure->brand . "</p>";
+        echo "<p>Model: " . $lure->model . '</p>';
     } else {
         echo 'There is no lure selected yet.';
     }

@@ -37,7 +37,7 @@ class Catches extends CActiveRecord {
         // will receive user inputs.
         return array(
             array('user_id, lake_id, lure_id, fish_id', 'numerical', 'integerOnly' => true),
-            array('coord_latitude, coord_longitude', 'numerical'),
+            array('coord_latitude, coord_longitude, weight', 'numerical'),
             array('image_url', 'length', 'max' => 100),
             array('date', 'safe'),
             // The following rule is used by search().
@@ -74,6 +74,7 @@ class Catches extends CActiveRecord {
             'image_url' => 'Image Url',
             'coord_latitude' => 'Coord Latitude',
             'coord_longitude' => 'Coord Longitude',
+            'weight' => 'weight',
         );
     }
 
@@ -103,7 +104,8 @@ class Catches extends CActiveRecord {
         $criteria->compare('image_url', $this->image_url, true);
         $criteria->compare('coord_latitude', $this->coord_latitude);
         $criteria->compare('coord_longitude', $this->coord_longitude);
-
+        $criteria->compare('weight', $this->weight);
+        
         return new CActiveDataProvider($this, array(
             'criteria' => $criteria,
         ));
