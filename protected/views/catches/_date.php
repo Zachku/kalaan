@@ -1,3 +1,4 @@
+<h2>Date</h2>
 <?php echo CHtml::beginForm(); ?>   
 <div class ="row">
     <?php
@@ -22,7 +23,7 @@
         array('id' => 'dateSubmit',
             'type' => 'post',
             'name' => 'dateSubmit',
-            'update' => '#date'), array('id' => 'dateSubmit'));
+            'update' => '#dateEdit'), array('id' => 'dateSubmit'));
     ?>
 </div>
 <?php echo CHtml::endForm(); ?>

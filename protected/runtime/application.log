@@ -8032,3 +8032,298 @@ REQUEST_URI=/kalaan/index.php/catches/add_fish/34
 in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\views\catches\_fish_form.php (30)
 in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php (211)
 in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)
+2014/05/27 21:33:50 [warning] [application] Failed to set unsafe attribute "url" of "Lures".
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php (171)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)
+2014/05/27 22:01:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "www.sahajauhoaasi.com".' in C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php:483
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(270): CController->missingAction('www.sahajauhoaa...')
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): CController->run('www.sahajauhoaa...')
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController('catches/www.sah...')
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/kalaan/index.php/catches/www.sahajauhoaasi.com
+HTTP_REFERER=http://localhost/kalaan/index.php/catches/34
+---
+2014/05/27 22:02:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "www.sahajauhoaasi.com".' in C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php:483
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(270): CController->missingAction('www.sahajauhoaa...')
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): CController->run('www.sahajauhoaa...')
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController('catches/www.sah...')
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/kalaan/index.php/catches/www.sahajauhoaasi.com
+HTTP_REFERER=http://localhost/kalaan/index.php/catches/34
+---
+2014/05/27 22:02:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "www.sahajauhoaasi.com".' in C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php:483
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(270): CController->missingAction('www.sahajauhoaa...')
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): CController->run('www.sahajauhoaa...')
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController('catches/www.sah...')
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/kalaan/index.php/catches/www.sahajauhoaasi.com
+HTTP_REFERER=http://localhost/kalaan/index.php/catches/34
+---
+2014/05/27 22:02:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "www.sahajauhoaasi.com".' in C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php:483
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(270): CController->missingAction('www.sahajauhoaa...')
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): CController->run('www.sahajauhoaa...')
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController('catches/www.sah...')
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/kalaan/index.php/catches/www.sahajauhoaasi.com
+HTTP_REFERER=http://localhost/kalaan/index.php/catches/www.sahajauhoaasi.com
+---
+2014/05/27 22:02:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "www.sahajauhoaasi.com".' in C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php:483
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(270): CController->missingAction('www.sahajauhoaa...')
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): CController->run('www.sahajauhoaa...')
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController('catches/www.sah...')
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/kalaan/index.php/catches/www.sahajauhoaasi.com
+HTTP_REFERER=http://localhost/kalaan/index.php/catches/www.sahajauhoaasi.com
+---
+2014/05/27 22:02:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "www.sahajauhoaasi.com".' in C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php:483
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(270): CController->missingAction('www.sahajauhoaa...')
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): CController->run('www.sahajauhoaa...')
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController('catches/www.sah...')
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/kalaan/index.php/catches/www.sahajauhoaasi.com
+HTTP_REFERER=http://localhost/kalaan/index.php/catches/www.sahajauhoaasi.com
+---
+2014/05/27 22:02:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "www.sahajauhoaasi.com".' in C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php:483
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(270): CController->missingAction('www.sahajauhoaa...')
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): CController->run('www.sahajauhoaa...')
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController('catches/www.sah...')
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/kalaan/index.php/catches/www.sahajauhoaasi.com
+HTTP_REFERER=http://localhost/kalaan/index.php/catches/www.sahajauhoaasi.com
+---
+2014/05/27 22:03:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "www.sahajauhoaasi.com".' in C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php:483
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(270): CController->missingAction('www.sahajauhoaa...')
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): CController->run('www.sahajauhoaa...')
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController('catches/www.sah...')
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/kalaan/index.php/catches/www.sahajauhoaasi.com
+HTTP_REFERER=http://localhost/kalaan/index.php/catches/www.sahajauhoaasi.com
+---
+2014/05/27 22:05:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "www.sahajauhoaasi.com".' in C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php:483
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(270): CController->missingAction('www.sahajauhoaa...')
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): CController->run('www.sahajauhoaa...')
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController('catches/www.sah...')
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/kalaan/index.php/catches/www.sahajauhoaasi.com
+HTTP_REFERER=http://localhost/kalaan/index.php/catches/www.sahajauhoaasi.com
+---
+2014/05/27 22:06:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "www.sahajauhoaasi.com".' in C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php:483
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(270): CController->missingAction('www.sahajauhoaa...')
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): CController->run('www.sahajauhoaa...')
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController('catches/www.sah...')
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/kalaan/index.php/catches/www.sahajauhoaasi.com
+HTTP_REFERER=http://localhost/kalaan/index.php/catches/www.sahajauhoaasi.com
+---
+2014/05/27 22:09:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "www.sahajauhoaasi.com".' in C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php:483
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(270): CController->missingAction('www.sahajauhoaa...')
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): CController->run('www.sahajauhoaa...')
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController('catches/www.sah...')
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/kalaan/index.php/catches/www.sahajauhoaasi.com
+HTTP_REFERER=http://localhost/kalaan/index.php/catches/www.sahajauhoaasi.com
+---
+2014/05/27 22:09:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "www.sahajauhoaasi.com".' in C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php:483
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(270): CController->missingAction('www.sahajauhoaa...')
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): CController->run('www.sahajauhoaa...')
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController('catches/www.sah...')
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/kalaan/index.php/catches/www.sahajauhoaasi.com
+HTTP_REFERER=http://localhost/kalaan/index.php/catches/www.sahajauhoaasi.com
+---
+2014/05/27 22:10:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "www.sahajauhoaasi.com".' in C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php:483
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(270): CController->missingAction('www.sahajauhoaa...')
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): CController->run('www.sahajauhoaa...')
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController('catches/www.sah...')
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/kalaan/index.php/catches/www.sahajauhoaasi.com
+HTTP_REFERER=http://localhost/kalaan/index.php/catches/www.sahajauhoaasi.com
+---
+2014/05/27 22:10:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "www.sahajauhoaasi.com".' in C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php:483
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(270): CController->missingAction('www.sahajauhoaa...')
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): CController->run('www.sahajauhoaa...')
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController('catches/www.sah...')
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/kalaan/index.php/catches/www.sahajauhoaasi.com
+HTTP_REFERER=http://localhost/kalaan/index.php/catches/www.sahajauhoaasi.com
+---
+2014/05/27 22:10:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "www.sahajauhoaasi.com".' in C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php:483
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(270): CController->missingAction('www.sahajauhoaa...')
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): CController->run('www.sahajauhoaa...')
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController('catches/www.sah...')
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/kalaan/index.php/catches/www.sahajauhoaasi.com
+HTTP_REFERER=http://localhost/kalaan/index.php/catches/www.sahajauhoaasi.com
+---
+2014/05/27 22:13:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "www.sahajauhoaasi.com".' in C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php:483
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(270): CController->missingAction('www.sahajauhoaa...')
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): CController->run('www.sahajauhoaa...')
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController('catches/www.sah...')
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/kalaan/index.php/catches/www.sahajauhoaasi.com
+HTTP_REFERER=http://localhost/kalaan/index.php/catches/www.sahajauhoaasi.com
+---
+2014/05/27 22:14:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "www.sahajauhoaasi.com".' in C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php:483
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(270): CController->missingAction('www.sahajauhoaa...')
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): CController->run('www.sahajauhoaa...')
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController('catches/www.sah...')
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/kalaan/index.php/catches/www.sahajauhoaasi.com
+HTTP_REFERER=http://localhost/kalaan/index.php/catches/www.sahajauhoaasi.com
+---
+2014/05/27 22:14:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "www.sahajauhoaasi.com".' in C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php:483
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(270): CController->missingAction('www.sahajauhoaa...')
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): CController->run('www.sahajauhoaa...')
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController('catches/www.sah...')
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/kalaan/index.php/catches/www.sahajauhoaasi.com
+HTTP_REFERER=http://localhost/kalaan/index.php/catches/www.sahajauhoaasi.com
+---
+2014/05/27 22:14:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "www.sahajauhoaasi.com".' in C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php:483
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(270): CController->missingAction('www.sahajauhoaa...')
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): CController->run('www.sahajauhoaa...')
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController('catches/www.sah...')
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/kalaan/index.php/catches/www.sahajauhoaasi.com
+HTTP_REFERER=http://localhost/kalaan/index.php/catches/www.sahajauhoaasi.com
+---
+2014/05/27 22:14:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "www.sahajauhoaasi.com".' in C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php:483
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(270): CController->missingAction('www.sahajauhoaa...')
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): CController->run('www.sahajauhoaa...')
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController('catches/www.sah...')
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/kalaan/index.php/catches/www.sahajauhoaasi.com
+HTTP_REFERER=http://localhost/kalaan/index.php/catches/www.sahajauhoaasi.com
+---
+2014/05/27 22:22:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "www.sahajauhoaasi.com".' in C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php:483
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(270): CController->missingAction('www.sahajauhoaa...')
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): CController->run('www.sahajauhoaa...')
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController('catches/www.sah...')
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/kalaan/index.php/catches/www.sahajauhoaasi.com
+HTTP_REFERER=http://localhost/kalaan/index.php/catches/www.sahajauhoaasi.com
+---
+2014/05/27 22:23:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "www.sahajauhoaasi.com".' in C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php:483
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(270): CController->missingAction('www.sahajauhoaa...')
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): CController->run('www.sahajauhoaa...')
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController('catches/www.sah...')
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/kalaan/index.php/catches/www.sahajauhoaasi.com
+HTTP_REFERER=http://localhost/kalaan/index.php/catches/www.sahajauhoaasi.com
+---
+2014/05/27 22:24:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "www.sahajauhoaasi.com".' in C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php:483
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(270): CController->missingAction('www.sahajauhoaa...')
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): CController->run('www.sahajauhoaa...')
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController('catches/www.sah...')
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/kalaan/index.php/catches/www.sahajauhoaasi.com
+HTTP_REFERER=http://localhost/kalaan/index.php/catches/www.sahajauhoaasi.com
+---
+2014/05/27 22:25:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "www.sahajauhoaasi.com".' in C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php:483
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(270): CController->missingAction('www.sahajauhoaa...')
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): CController->run('www.sahajauhoaa...')
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController('catches/www.sah...')
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/kalaan/index.php/catches/www.sahajauhoaasi.com
+HTTP_REFERER=http://localhost/kalaan/index.php/catches/www.sahajauhoaasi.com
+---
+2014/05/28 17:11:03 [warning] [application] Failed to set unsafe attribute "url" of "Lures".
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php (171)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)
+2014/05/28 17:11:05 [warning] [application] Failed to set unsafe attribute "url" of "Lures".
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php (171)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)
+2014/05/28 17:32:57 [error] [php] Undefined variable: date (C:\Users\Juho\Dropbox\htdocs\kalaan\protected\views\users\my_profile.php:8)
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(869): UsersController->renderFile()
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(782): UsersController->renderPartial()
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\UsersController.php(58): UsersController->render()
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\actions\CInlineAction.php(49): UsersController->actionMy_profile()
+#4 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CFilterChain.php(133): UsersController->runAction()
+#6 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CInlineFilter.php(58): UsersController->filterAccessControl()
+#9 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(265): UsersController->runActionWithFilters()
+#12 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): UsersController->run()
+#13 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CWebApplication->run()
+REQUEST_URI=/kalaan/index.php/users/my_profile
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\views\users\my_profile.php (8)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\UsersController.php (58)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)

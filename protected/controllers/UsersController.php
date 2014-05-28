@@ -49,7 +49,7 @@ class UsersController extends Controller {
      */
     public function actionMy_profile(){
         if(!Yii::app()->user->isGuest){
-            $catches = Catches::model()->findAll(array('condition' => 'user_id='.Yii::app()->user->id));
+            $catches = Catches::model()->findAll(array('condition' => 'user_id='.Yii::app()->user->id, 'order'=>'date'));
             $user = Users::model()->findByPk(Yii::app()->user->id);
             
             $this->render('my_profile', array(

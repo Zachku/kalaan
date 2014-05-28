@@ -6,7 +6,7 @@
  */
 Yii::import('ext.egmap.*');
 $gMap = new EGMap();
-$gMap->setWidth(900);
+$gMap->setWidth(1100);
 $gMap->setHeight(300);
 $gMap->zoom = 6;
 $mapTypeControlOptions = array(

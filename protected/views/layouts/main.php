@@ -21,10 +21,12 @@
     <body>
 
         <div class="container" id="page">
-
-            <div id="header">
-                <div id="logo"><?php echo CHtml::encode(Yii::app()->name); ?></div>
-            </div><!-- header -->
+            <div id="banner_top">
+                <p>Part of J. Sirén portfolio | <a href="http://www.sahajauhoaasi.com"> Portfolio </a> </p> 
+            </div>
+            <div id="banner_logo">
+                
+            </div>
 
             <div id="mainmenu">
                 <?php
@@ -56,7 +58,7 @@
             <div class="clear"></div>
 
             <div id="footer">
-                Copyright &copy; <?php echo date('Y'); ?> by My Company.<br/>
+                Copyright &copy; <?php echo date('Y'); ?> J. Sirén<br/>
                 All Rights Reserved.<br/>
                 <?php echo Yii::powered(); ?>
             </div><!-- footer -->

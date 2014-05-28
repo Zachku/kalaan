@@ -6,9 +6,9 @@
      */
     Yii::import('ext.egmap.*');
     $gMap = new EGMap();
-    $gMap->setWidth(900);
+    $gMap->setWidth(1150);
     $gMap->setHeight(400);
-    $gMap->zoom = 4;
+    $gMap->zoom = 6;
     $mapTypeControlOptions = array(
         'position' => EGMapControlPosition::RIGHT_TOP,
         'style' => EGMap::MAPTYPECONTROL_STYLE_HORIZONTAL_BAR
