@@ -8382,3 +8382,6 @@ in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)
 2014/05/28 18:36:54 [warning] [application] Failed to set unsafe attribute "url" of "Lures".
 in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php (171)
 in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)
+2014/05/30 10:31:54 [warning] [application] Failed to set unsafe attribute "url" of "Lures".
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php (171)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)

@@ -119,10 +119,8 @@ class CatchesController extends Controller {
 
     public function actionAdd_image() {
         if (isset($_POST['Catches']['image']) && $_POST['Catches']['user_id'] == Yii::app()->user->getId()) {
-
-
             $catch = Catches::model()->findByPk($_POST['Catches']['catch_id']);
-            $rnd = rand(1000000, 9999999);
+            $rnd = rand(1000000, 9999999); // randnumber to make image harder to find
             $image_url = $rnd . $catch->catch_id . '.png';
             $url = DIRECTORY_SEPARATOR . 'images' . DIRECTORY_SEPARATOR . 'catch_images' . DIRECTORY_SEPARATOR;
             $catch->image_url = $image_url;
