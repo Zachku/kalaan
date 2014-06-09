@@ -1,3 +1,5 @@
+<?php Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/view.js', CClientScript::POS_END); ?>
+
 <?php
 /*
  * Delete catch
@@ -13,7 +15,7 @@
     </p>
 </div>
 
-<?php Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/view.js', CClientScript::POS_END); ?>
+
 
 <p>View this catch as a quest <?php echo CHtml::link('here', array('catches/viewasaquest', 'id' => $catch->catch_id)); ?></p>
 <?php if ($catch->image_url === null) { ?>

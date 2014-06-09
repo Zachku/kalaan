@@ -14,7 +14,7 @@ class CatchesController extends Controller {
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions' => array('create', 'add_image', 'delete', 'delete_image', 'add_coords', 'add_lure', 'add_fish', 'add_date'),
+                'actions' => array('create', 'add_image', 'delete', 'delete_image', 'add_coords', 'add_lure', 'add_fish', 'add_date', 'analysis'),
                 'users' => array('@'),
             ),
             array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -63,10 +63,10 @@ class CatchesController extends Controller {
             } else {
                 $fish = new Fishes;
             }
-            
+
             $fishes_model = Fishes::model()->findAll();
             $fishes_list = CHtml::listData($fishes_model, 'fish_id', 'name');
-            
+
             if ($catch->lake_id != NULL) {
                 $lake = Lakes::model()->findByPk($catch->lake_id);
             } else {
@@ -113,28 +113,34 @@ class CatchesController extends Controller {
         }
     }
 
-    /*
+    /**
      * Add image of catch
      */
-
     public function actionAdd_image() {
         if (isset($_POST['Catches']['image']) && $_POST['Catches']['user_id'] == Yii::app()->user->getId()) {
             $catch = Catches::model()->findByPk($_POST['Catches']['catch_id']);
             $rnd = rand(1000000, 9999999); // randnumber to make image harder to find
             $image_url = $rnd . $catch->catch_id . '.png';
-            $url = DIRECTORY_SEPARATOR . 'images' . DIRECTORY_SEPARATOR . 'catch_images' . DIRECTORY_SEPARATOR;
+            $url = Catches::model()->getImagesBaseUrl();
             $catch->image_url = $image_url;
             if ($catch->save()) {
                 $uploadedFile = CUploadedFile::getInstance($catch, 'image');
-                $uploadedFile->saveAs(Yii::app()->basePath . DIRECTORY_SEPARATOR . '..' . $url . $image_url);
-                $image = Yii::app()->image->load(Yii::app()->basePath . DIRECTORY_SEPARATOR . '..' . $url . $image_url);
-                $image->resize(400, 300);
+                $uploadedFile->saveAs($url . $image_url);
+                
+                
+                $image = Yii::app()->image->load($url . $image_url);
+                $image->resize(400, 200, Image::AUTO);
                 $image->save();
+                
+                
             }
             $this->redirect(array('view', 'id' => $catch->catch_id));
         }
     }
 
+    /**
+     * 
+     */
     public function actionDelete_image() {
         $catch = Catches::model()->findByPk($_POST['catch_id']);
         if ($catch->user_id === Yii::app()->user->getId()) {
@@ -203,17 +209,17 @@ class CatchesController extends Controller {
         $catch = Catches::model()->findByPk($id);
         $fish = Fishes::model()->findByPk($_POST['Fishes']['fish_id']);
         if ($catch->isOwner() && isset($_POST['Fishes'])) {
-            if(isset($_POST['Catches']['weight'])){
+            if (isset($_POST['Catches']['weight'])) {
                 $catch->weight = $_POST['Catches']['weight'];
             }
             $fishes_model = Fishes::model()->findAll();
             $fishes_list = CHtml::listData($fishes_model, 'fish_id', 'name');
-            
-            $catch->fish_id =  $_POST['Fishes']['fish_id'];
+
+            $catch->fish_id = $_POST['Fishes']['fish_id'];
             if ($catch->save()) {
-                $this->renderPartial('_fish_form', array('fish' => $fish, 'catch' => $catch, 'fishes_list' => $fishes_list, 'fishMessage' => 'Success'));              
+                $this->renderPartial('_fish_form', array('fish' => $fish, 'catch' => $catch, 'fishes_list' => $fishes_list, 'fishMessage' => 'Success'));
             } else {
-                $this->renderPartial('_fish_form', array('fish' => $fish, 'catch' => $catch, 'fishes_list' => $fishes_list,'fishMessage' => 'There is something missing.'));
+                $this->renderPartial('_fish_form', array('fish' => $fish, 'catch' => $catch, 'fishes_list' => $fishes_list, 'fishMessage' => 'There is something missing.'));
             }
         }
     }
@@ -229,6 +235,13 @@ class CatchesController extends Controller {
             $this->renderPartial('_date', array('catch' => $catch), false, true);
             Yii::app()->end();
         }
+    }
+
+    /**
+     * 
+     */
+    public function actionAnalysis() {
+        $this->render('analysis', array());
     }
 
     // Uncomment the following methods and override them if needed

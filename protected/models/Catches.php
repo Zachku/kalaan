@@ -105,7 +105,7 @@ class Catches extends CActiveRecord {
         $criteria->compare('coord_latitude', $this->coord_latitude);
         $criteria->compare('coord_longitude', $this->coord_longitude);
         $criteria->compare('weight', $this->weight);
-        
+
         return new CActiveDataProvider($this, array(
             'criteria' => $criteria,
         ));
@@ -142,4 +142,21 @@ class Catches extends CActiveRecord {
         return $this->user_id == Yii::app()->user->getId();
     }
 
+    /**
+     * 
+     * @return images url to controller
+     */
+    public function getImagesBaseUrl() {
+        $url = Yii::app()->basePath . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'images' . DIRECTORY_SEPARATOR . 'catch_images' . DIRECTORY_SEPARATOR;
+        return $url;
+    }
+
+    /**
+     * 
+     * @return images url to view
+     */
+    public function getImagesBaseUrltoView() {
+        $url = Yii::app()->request->baseUrl . '/' . 'images' . '/' . 'catch_images' . '/';
+        return $url;
+    }
 }

@@ -5,7 +5,7 @@
     $this->widget('zii.widgets.jui.CJuiDatePicker', array(
         'name' => 'catch_date',
         'attribute' => $catch->date,
-        'value' => $catch->date,
+        'value' => date('j.m.Y', strtotime($catch->date)),
         'options' => array(
             'showAnim' => 'slide', //'slide','fold','slideDown','fadeIn','blind','bounce','clip','drop'
             'dateFormat'=>'dd-mm-yy',

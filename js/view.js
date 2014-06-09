@@ -6,22 +6,13 @@ $(document).ready(function() {
 });
 
 $("#SelectLakeLink").live('click', function() {
-    if ($("#SelectLake").is(":hidden"))
-        $("#SelectLake").fadeIn();
-    else
-        $("#SelectLake").fadeOut();
+    $("#SelectLake").toggle();
 });
 
 $("#SelectLureLink").live('click', function() {
-    if ($("#SelectLure").is(":hidden"))
-        $("#SelectLure").fadeIn();
-    else
-        $("#SelectLure").fadeOut();
+    $("#SelectLure").toggle();
 });
 
 $("#SelectFishLink").live('click', function() {
-    if ($("#SelectFish").is(":hidden"))
-        $("#SelectFish").fadeIn();
-    else
-        $("#SelectFish").fadeOut();
+    $("#SelectFish").toggle();
 });

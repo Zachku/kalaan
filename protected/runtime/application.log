@@ -8385,3 +8385,389 @@ in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)
 2014/05/30 10:31:54 [warning] [application] Failed to set unsafe attribute "url" of "Lures".
 in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php (171)
 in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)
+2014/05/30 11:34:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "analysis".' in C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController('analysis')
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kalaan/index.php/analysis
+---
+2014/06/01 22:25:17 [warning] [application] Failed to set unsafe attribute "url" of "Lures".
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php (169)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)
+2014/06/02 21:45:42 [error] [php] include(echoCHtml.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\Users\Juho\Dropbox\htdocs\kalaan\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\protected\views\users\my_profile.php(27): spl_autoload_call()
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CBaseController.php(126): require()
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CBaseController.php(95): UsersController->renderInternal()
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(869): UsersController->renderFile()
+#4 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(782): UsersController->renderPartial()
+#5 C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\UsersController.php(58): UsersController->render()
+#6 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\actions\CInlineAction.php(49): UsersController->actionMy_profile()
+#7 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CFilterChain.php(133): UsersController->runAction()
+#9 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#11 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CInlineFilter.php(58): UsersController->filterAccessControl()
+#12 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#13 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(265): UsersController->runActionWithFilters()
+#15 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): UsersController->run()
+#16 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#17 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CWebApplication->run()
+REQUEST_URI=/kalaan/index.php/users/my_profile
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\views\users\my_profile.php (27)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\UsersController.php (58)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)
+2014/06/09 21:01:17 [error] [php] Trying to get property of non-object (C:\Users\Juho\Dropbox\htdocs\kalaan\protected\views\users\my_profile.php:18)
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(869): UsersController->renderFile()
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(782): UsersController->renderPartial()
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\UsersController.php(58): UsersController->render()
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\actions\CInlineAction.php(49): UsersController->actionMy_profile()
+#4 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CFilterChain.php(133): UsersController->runAction()
+#6 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CInlineFilter.php(58): UsersController->filterAccessControl()
+#9 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(265): UsersController->runActionWithFilters()
+#12 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): UsersController->run()
+#13 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CWebApplication->run()
+REQUEST_URI=/kalaan/index.php/users/my_profile
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\views\users\my_profile.php (18)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\UsersController.php (58)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)
+2014/06/09 21:03:42 [error] [php] Trying to get property of non-object (C:\Users\Juho\Dropbox\htdocs\kalaan\protected\views\users\my_profile.php:18)
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(869): UsersController->renderFile()
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(782): UsersController->renderPartial()
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\UsersController.php(58): UsersController->render()
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\actions\CInlineAction.php(49): UsersController->actionMy_profile()
+#4 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CFilterChain.php(133): UsersController->runAction()
+#6 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CInlineFilter.php(58): UsersController->filterAccessControl()
+#9 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(265): UsersController->runActionWithFilters()
+#12 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): UsersController->run()
+#13 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CWebApplication->run()
+REQUEST_URI=/kalaan/index.php/users/my_profile
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\views\users\my_profile.php (18)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\UsersController.php (58)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)
+2014/06/09 21:09:41 [error] [exception.CDbException] exception 'CDbException' with message 'Relation "fishes" is not defined in active record class "Catches".' in C:\Users\Juho\Dropbox\htdocs\kalaan\framework\db\ar\CActiveFinder.php:226
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\db\ar\CActiveFinder.php(296): CActiveFinder->buildJoinTree(Object(CJoinElement), 'fishes')
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\db\ar\CActiveFinder.php(48): CActiveFinder->buildJoinTree(Object(CJoinElement), Array)
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\db\ar\CActiveRecord.php(909): CActiveFinder->__construct(Object(Catches), Array)
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\db\ar\CActiveRecord.php(1355): CActiveRecord->getActiveFinder(Array)
+#4 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#5 C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\UsersController.php(52): CActiveRecord->findAll(Array)
+#6 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\actions\CInlineAction.php(49): UsersController->actionMy_profile()
+#7 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): CController->run('my_profile')
+#16 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController('users/my_profil...')
+#17 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/kalaan/index.php/users/my_profile
+HTTP_REFERER=http://localhost/kalaan/index.php/site/login
+---
+2014/06/09 21:09:53 [error] [exception.CDbException] exception 'CDbException' with message 'Relation "fishe" is not defined in active record class "Catches".' in C:\Users\Juho\Dropbox\htdocs\kalaan\framework\db\ar\CActiveFinder.php:226
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\db\ar\CActiveFinder.php(296): CActiveFinder->buildJoinTree(Object(CJoinElement), 'fishe')
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\db\ar\CActiveFinder.php(48): CActiveFinder->buildJoinTree(Object(CJoinElement), Array)
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\db\ar\CActiveRecord.php(909): CActiveFinder->__construct(Object(Catches), Array)
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\db\ar\CActiveRecord.php(1355): CActiveRecord->getActiveFinder(Array)
+#4 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#5 C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\UsersController.php(52): CActiveRecord->findAll(Array)
+#6 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\actions\CInlineAction.php(49): UsersController->actionMy_profile()
+#7 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): CController->run('my_profile')
+#16 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController('users/my_profil...')
+#17 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/kalaan/index.php/users/my_profile
+HTTP_REFERER=http://localhost/kalaan/index.php/site/login
+---
+2014/06/09 21:10:28 [error] [php] Trying to get property of non-object (C:\Users\Juho\Dropbox\htdocs\kalaan\protected\views\users\my_profile.php:18)
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(869): UsersController->renderFile()
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(782): UsersController->renderPartial()
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\UsersController.php(58): UsersController->render()
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\actions\CInlineAction.php(49): UsersController->actionMy_profile()
+#4 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CFilterChain.php(133): UsersController->runAction()
+#6 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CInlineFilter.php(58): UsersController->filterAccessControl()
+#9 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(265): UsersController->runActionWithFilters()
+#12 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): UsersController->run()
+#13 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CWebApplication->run()
+REQUEST_URI=/kalaan/index.php/users/my_profile
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\views\users\my_profile.php (18)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\UsersController.php (58)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)
+2014/06/09 21:10:52 [error] [php] Object of class Fishes could not be converted to string (C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\helpers\CHtml.php:162)
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CBaseController.php(126): require()
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CBaseController.php(95): UsersController->renderInternal()
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(869): UsersController->renderFile()
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(782): UsersController->renderPartial()
+#4 C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\UsersController.php(58): UsersController->render()
+#5 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\actions\CInlineAction.php(49): UsersController->actionMy_profile()
+#6 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CFilterChain.php(133): UsersController->runAction()
+#8 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CInlineFilter.php(58): UsersController->filterAccessControl()
+#11 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(265): UsersController->runActionWithFilters()
+#14 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): UsersController->run()
+#15 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CWebApplication->run()
+REQUEST_URI=/kalaan/index.php/users/my_profile
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\views\users\my_profile.php (18)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\UsersController.php (58)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)
+2014/06/09 21:11:06 [error] [exception.CException] exception 'CException' with message 'Property "Fishes.fish_name" is not defined.' in C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\db\ar\CActiveRecord.php(145): CComponent->__get('fish_name')
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\protected\views\users\my_profile.php(18): CActiveRecord->__get('fish_name')
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CBaseController.php(126): require('C:\Users\Juho\D...')
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Users\Juho\D...', Array, true)
+#4 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(869): CBaseController->renderFile('C:\Users\Juho\D...', Array, true)
+#5 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(782): CController->renderPartial('my_profile', Array, true)
+#6 C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\UsersController.php(58): CController->render('my_profile', Array)
+#7 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\actions\CInlineAction.php(49): UsersController->actionMy_profile()
+#8 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#10 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(291): CFilterChain->run()
+#15 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): CController->run('my_profile')
+#17 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController('users/my_profil...')
+#18 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/kalaan/index.php/users/my_profile
+HTTP_REFERER=http://localhost/kalaan/index.php/site/login
+---
+2014/06/09 21:11:14 [error] [php] Trying to get property of non-object (C:\Users\Juho\Dropbox\htdocs\kalaan\protected\views\users\my_profile.php:18)
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(869): UsersController->renderFile()
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(782): UsersController->renderPartial()
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\UsersController.php(58): UsersController->render()
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\actions\CInlineAction.php(49): UsersController->actionMy_profile()
+#4 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CFilterChain.php(133): UsersController->runAction()
+#6 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CInlineFilter.php(58): UsersController->filterAccessControl()
+#9 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(265): UsersController->runActionWithFilters()
+#12 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): UsersController->run()
+#13 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CWebApplication->run()
+REQUEST_URI=/kalaan/index.php/users/my_profile
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\views\users\my_profile.php (18)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\UsersController.php (58)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)
+2014/06/09 21:57:07 [error] [exception.CException] exception 'CException' with message 'Property "CatchesController.image" is not defined.' in C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php(130): CComponent->__get('image')
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\actions\CInlineAction.php(49): CatchesController->actionAdd_image()
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): CController->run('add_image')
+#6 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController('catches/add_ima...')
+#7 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/kalaan/index.php/catches/add_image
+HTTP_REFERER=http://localhost/kalaan/index.php/catches/35
+---
+2014/06/09 22:15:12 [error] [exception.CException] exception 'CException' with message 'CatchesController and its behaviors do not have a method or closure named "model".' in C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php(124): CComponent->__call('model', Array)
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php(124): CatchesController->model()
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\actions\CInlineAction.php(49): CatchesController->actionAdd_image()
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): CController->run('add_image')
+#7 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController('catches/add_ima...')
+#8 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/kalaan/index.php/catches/add_image
+HTTP_REFERER=http://localhost/kalaan/index.php/catches/35
+---
+2014/06/09 22:26:06 [error] [php] chmod() [<a href='function.chmod'>function.chmod</a>]: No such file or directory (C:\Users\Juho\Dropbox\htdocs\kalaan\protected\extensions\image\Image.php:339)
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\actions\CInlineAction.php(49): CatchesController->actionAdd_image()
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(286): CatchesController->runAction()
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(265): CatchesController->runActionWithFilters()
+#4 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): CatchesController->run()
+#5 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CWebApplication->run()
+REQUEST_URI=/kalaan/index.php/catches/add_image
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\extensions\image\Image.php (339)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php (132)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)
+2014/06/09 22:28:08 [error] [php] Undefined variable: image_url (C:\Users\Juho\Dropbox\htdocs\kalaan\protected\views\users\my_profile.php:24)
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(869): UsersController->renderFile()
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(782): UsersController->renderPartial()
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\UsersController.php(58): UsersController->render()
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\actions\CInlineAction.php(49): UsersController->actionMy_profile()
+#4 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CFilterChain.php(133): UsersController->runAction()
+#6 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CInlineFilter.php(58): UsersController->filterAccessControl()
+#9 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(265): UsersController->runActionWithFilters()
+#12 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): UsersController->run()
+#13 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CWebApplication->run()
+REQUEST_URI=/kalaan/index.php/users/my_profile
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\views\users\my_profile.php (24)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\UsersController.php (58)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)
+2014/06/09 22:28:22 [error] [exception.CException] exception 'CException' with message 'image file not found' in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\extensions\image\Image.php:78
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\protected\extensions\image\CImageComponent.php(41): Image->__construct('/kalaan/images/...', Array)
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\protected\views\users\my_profile.php(24): CImageComponent->load('/kalaan/images/...')
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CBaseController.php(126): require('C:\Users\Juho\D...')
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Users\Juho\D...', Array, true)
+#4 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(869): CBaseController->renderFile('C:\Users\Juho\D...', Array, true)
+#5 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(782): CController->renderPartial('my_profile', Array, true)
+#6 C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\UsersController.php(58): CController->render('my_profile', Array)
+#7 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\actions\CInlineAction.php(49): UsersController->actionMy_profile()
+#8 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#10 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(291): CFilterChain->run()
+#15 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): CController->run('my_profile')
+#17 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController('users/my_profil...')
+#18 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/kalaan/index.php/users/my_profile
+HTTP_REFERER=http://localhost/kalaan/index.php/catches/39
+---
+2014/06/09 22:53:36 [warning] [application] Failed to set unsafe attribute "url" of "Lures".
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php (175)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)
+2014/06/09 22:53:41 [warning] [application] Failed to set unsafe attribute "url" of "Lures".
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php (175)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)
+2014/06/09 22:53:45 [warning] [application] Failed to set unsafe attribute "url" of "Lures".
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php (175)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)
+2014/06/09 22:53:47 [warning] [application] Failed to set unsafe attribute "url" of "Lures".
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php (175)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)
+2014/06/09 22:54:07 [warning] [application] Failed to set unsafe attribute "url" of "Lures".
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php (175)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)
+2014/06/09 22:54:08 [warning] [application] Failed to set unsafe attribute "url" of "Lures".
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php (175)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)
+2014/06/09 22:54:09 [warning] [application] Failed to set unsafe attribute "url" of "Lures".
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php (175)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)
+2014/06/09 22:54:10 [warning] [application] Failed to set unsafe attribute "url" of "Lures".
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php (175)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)
+2014/06/09 22:54:11 [warning] [application] Failed to set unsafe attribute "url" of "Lures".
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php (175)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)
+2014/06/09 22:54:12 [warning] [application] Failed to set unsafe attribute "url" of "Lures".
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php (175)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)
+2014/06/09 22:54:13 [warning] [application] Failed to set unsafe attribute "url" of "Lures".
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php (175)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)
+2014/06/09 22:54:24 [warning] [application] Failed to set unsafe attribute "url" of "Lures".
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php (175)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)
+2014/06/09 22:54:28 [warning] [application] Failed to set unsafe attribute "url" of "Lures".
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php (175)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)
+2014/06/09 22:54:30 [warning] [application] Failed to set unsafe attribute "url" of "Lures".
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php (175)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)
+2014/06/09 22:54:38 [warning] [application] Failed to set unsafe attribute "url" of "Lures".
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php (175)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)
+2014/06/09 22:54:40 [warning] [application] Failed to set unsafe attribute "url" of "Lures".
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php (175)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)
+2014/06/09 22:54:43 [warning] [application] Failed to set unsafe attribute "url" of "Lures".
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php (175)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)
+2014/06/09 22:58:00 [warning] [application] Failed to set unsafe attribute "url" of "Lures".
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php (175)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)
+2014/06/09 22:58:28 [warning] [application] Failed to set unsafe attribute "url" of "Lures".
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php (175)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)
+2014/06/09 23:00:30 [warning] [application] Failed to set unsafe attribute "url" of "Lures".
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php (175)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)
+2014/06/09 23:00:32 [warning] [application] Failed to set unsafe attribute "url" of "Lures".
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php (175)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)
+2014/06/09 23:03:04 [warning] [application] Failed to set unsafe attribute "url" of "Lures".
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php (175)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)
+2014/06/09 23:05:32 [warning] [application] Failed to set unsafe attribute "url" of "Lures".
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php (175)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)

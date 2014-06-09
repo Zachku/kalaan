@@ -37,7 +37,7 @@ class Lures extends CActiveRecord
 			array('color', 'length', 'max'=>40),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('lure_id, brand, model, weight, color', 'safe', 'on'=>'search'),
+			array('lure_id, brand, model, weight, url, color', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -64,6 +64,7 @@ class Lures extends CActiveRecord
 			'model' => 'Model',
 			'weight' => 'Weight',
 			'color' => 'Color',
+                        'url' => 'Url',
 		);
 	}
 
@@ -90,7 +91,8 @@ class Lures extends CActiveRecord
 		$criteria->compare('model',$this->model,true);
 		$criteria->compare('weight',$this->weight);
 		$criteria->compare('color',$this->color,true);
-
+                $criteria->compare('url',$this->url,true);
+                
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
 		));

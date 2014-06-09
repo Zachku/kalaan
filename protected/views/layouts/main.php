@@ -36,6 +36,7 @@
                         array('label' => 'My Profile', 'url' => array('/users/my_profile'), 'visible' => !Yii::app()->user->isGuest),
                         array('label' => 'Register', 'url' => array('/users/register'), 'visible' => Yii::app()->user->isGuest),
                         array('label' => 'Login', 'url' => array('/site/login'), 'visible' => Yii::app()->user->isGuest),
+                        array('label' => 'Analysis', 'url' => array('/catches/analysis'), 'visible' => !Yii::app()->user->isGuest),
                         array('label' => 'Logout (' . Yii::app()->user->name . ')', 'url' => array('/site/logout'), 'visible' => !Yii::app()->user->isGuest)
                     ),
                 ));

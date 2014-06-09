@@ -41,7 +41,7 @@
 
         <div class="row buttons">
             <?php
-            echo CHtml::ajaxSubmitButton("Post", array('catches/add_fish', 'id' => $catch->catch_id), array('update' => '#fishEdit'), array('id' => 'fishSubmit'));
+            echo CHtml::ajaxSubmitButton("Save", array('catches/add_fish', 'id' => $catch->catch_id), array('update' => '#fishEdit'), array('id' => 'fishSubmit'));
             ?>
         </div>
 
