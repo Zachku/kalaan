@@ -313,3 +313,7 @@ div.search-form
     float: right;
 }
 
+.successMessage{
+    background-color:#b8e356;
+    border-radius: 0 3px 0 3px;
+}

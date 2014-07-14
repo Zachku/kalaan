@@ -36,7 +36,7 @@ $form = $this->beginWidget('CActiveForm', array(
 <?php
 echo CHtml::ajaxSubmitButton("Save", 
         array('catches/add_fish', 'id' => $catch->catch_id), 
-        array('update' => '#fishEdit',  'success'=>'function(){$("#mymodal").dialog("close");}'), 
+        array('success'=>'function(){$("#fishdialog").dialog("close");location.reload();}', 'update' => '#',  ), 
         array('id' => 'fishSubmit'));
 ?>
 </div>

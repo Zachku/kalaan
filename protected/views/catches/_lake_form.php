@@ -25,7 +25,7 @@
         <?php if (isset($lakeMessage)) { ?> 
             <div class ="successMessage">
                 <?php echo $lakeMessage; ?> 
-            <div>
+            </div>
         <?php } ?> 
 
         <div class = 'row'>
