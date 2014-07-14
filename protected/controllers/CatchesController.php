@@ -31,25 +31,21 @@ class CatchesController extends Controller {
         $this->render('index');
     }
 
-    /*
+    /**
      * New Catch
      * 
      */
-
     public function actionCreate() {
         $model = new Catches;
         $model->date = date("Y-m-d H:i:s");
         if ($model->save()) {
             $this->redirect(array('view', 'id' => $model->catch_id));
         }
-        echo Yii::app()->user->getId();
-        ;
     }
 
-    /*
+    /**
      * View spesific catch
      */
-
     public function actionView($id, $message = null) {
         $catch = Catches::model()->findByPk($id);
         if ($catch->isOwner()) {
@@ -100,15 +96,29 @@ class CatchesController extends Controller {
         ));
     }
 
-    /* '
+    /**
      * Delete catch
      */
-
     public function actionDelete() {
 
         $catch = Catches::model()->findByPk($_POST['catch_id']);
         if ($catch->user_id === Yii::app()->user->getId()) {
+            $lake_id = $catch->lake_id;
+            $lure_id = $catch->lure_id;
+
             $catch->delete();
+
+            //delete lake of this catch
+            if ($lake_id != null) {
+                $lake = Lakes::model()->findByPk($lake_id);
+                $lake->delete();
+            }
+
+            //delete lure of this catch
+            if ($lure_id != null) {
+                $lure = Lures::model()->findByPk($lure_id);
+                $lure->delete();
+            }
             $this->redirect(array('users/my_profile'));
         }
     }
@@ -126,20 +136,18 @@ class CatchesController extends Controller {
             if ($catch->save()) {
                 $uploadedFile = CUploadedFile::getInstance($catch, 'image');
                 $uploadedFile->saveAs($url . $image_url);
-                
-                
+
+
                 $image = Yii::app()->image->load($url . $image_url);
                 $image->resize(400, 200, Image::AUTO);
                 $image->save();
-                
-                
             }
             $this->redirect(array('view', 'id' => $catch->catch_id));
         }
     }
 
     /**
-     * 
+     * Delete image
      */
     public function actionDelete_image() {
         $catch = Catches::model()->findByPk($_POST['catch_id']);
@@ -152,6 +160,11 @@ class CatchesController extends Controller {
         }
     }
 
+    /**
+     * 
+     * @param type $id
+     * @throws CHttpException
+     */
     public function actionAdd_coords($id) {
         $catch = Catches::model()->findByPk($id);
         if ($catch->isOwner()) {
@@ -185,7 +198,7 @@ class CatchesController extends Controller {
     }
 
     /**
-     * Create or update lure
+     * Create or update lake
      */
     public function actionAdd_lake($id) {
         $catch = Catches::model()->findByPk($id);

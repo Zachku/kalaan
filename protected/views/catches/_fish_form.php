@@ -1,5 +1,5 @@
 <h2>Fish</h2>
-<p> <?php
+    <p> <?php
     if ($catch->fish_id != null) {
         echo "<p>Fish: " . $fish->name . "</p>";
         echo "<p>Weight: " . $catch->weight . '</p>';
@@ -21,22 +21,22 @@
         ?>
 
 
-            <?php if (isset($fishMessage)) { ?> 
+        <?php if (isset($fishMessage)) { ?> 
             <div class ="successMessage">
-            <?php echo $fishMessage; ?> 
+                <?php echo $fishMessage; ?> 
             </div>
-<?php } ?> 
+        <?php } ?> 
 
         <div class = 'row'>
             <?php echo $form->labelEx($fish, 'name'); ?>
             <?php echo CHtml::activeDropDownList($fish, 'fish_id', $fishes_list); ?>
-<?php echo $form->error($fish, 'name'); ?>
+            <?php echo $form->error($fish, 'name'); ?>
         </div>
 
         <div class = 'row'>
             <?php echo $form->labelEx($catch, 'weight'); ?>
             <?php echo CHtml::activeNumberField($catch, 'weight'); ?>
-<?php echo $form->error($catch, 'weight'); ?>
+            <?php echo $form->error($catch, 'weight'); ?>
         </div>
 
         <div class="row buttons">
@@ -45,6 +45,6 @@
             ?>
         </div>
 
-<?php $this->endWidget(); ?>
+        <?php $this->endWidget(); ?>
     </div>
 </div>

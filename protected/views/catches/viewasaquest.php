@@ -1,16 +1,27 @@
-<?php if($catch->date != NULL && $catch->date != NULL) ?>
-<h1>User's <?php echo $owner->username; ?> catch  <?php if($catch->date != NULL) echo ' of ' . $catch->date; ?>: <?php if($fish != NULL) echo $fish->name; ?> </h1>
+<?php if ($catch->date != NULL && $catch->date != NULL)  ?>
+<h2>User's <?php echo $owner->username; ?> catch  <?php if ($catch->date != NULL) echo ' of ' . date('j.m.Y', strtotime($catch->date)) ?>: </h2> 
+<h1> <?php
+    if ($fish != NULL) {
+        echo $fish->name;
+    }
+    if ($catch->weight != null) {
+        echo ", " . $catch->weight . ' kg';
+    }
+    ?>
+</h1>
+
 <?php
 /*
  * Fish
  */
 ?>
 <div id="imageonqview">
+    <h2>Image</h2>
     <?php if ($catch->image_url === null) { ?>
-        <h2>No image yet.</h2>
+        <p>No image yet.</p>
     <?php } else { ?>
         <div id="catch_image"><?php echo CHtml::image(Yii::app()->request->baseUrl . DIRECTORY_SEPARATOR . 'images' . DIRECTORY_SEPARATOR . 'catch_images' . DIRECTORY_SEPARATOR . $catch->image_url); ?></div>
-    <?php } ?>
+<?php } ?>
 </div>
 
 <?php
@@ -19,12 +30,13 @@
  */
 ?>
 <div id="maponqview">
+    <h2>Map</h2>
     <?php
     /*
      * Yii Google maps extension
      * http://www.yiiframework.com/extension/egmap/
      */
-    Yii::import('ext.egmap.*');
+    Yii::import('application.extensions.EGMap.*');
     $gMap = new EGMap();
     $gMap->setWidth(400);
     $gMap->setHeight(300);
@@ -52,7 +64,7 @@
 // If we don't have marker in database - make sure user can create one
     }
     $gMap->renderMap(array(), Yii::app()->language);
-    if(isset($lake)) {
+    if (isset($lake)) {
         echo $lake->lake_name . ", " . $lake->town;
     }
     ?>
@@ -60,23 +72,39 @@
 </div>
 
 
-<?php
-/*
- * Fish
- */
-?>
-<div id ="fishonqview"></div>
-
+<?php $this->beginWidget('CHtmlPurifier'); ?>
 <?php
 /*
  * Lure
  */
 ?>
 <div id ="lureonqview"></div>
-
+<h2>Lure</h2>
+<p> <?php
+    if ($catch->lure_id) {
+        echo "<p>Brand: " . $lure->brand . "</p>";
+        echo "<p>Model: " . $lure->model . '</p>';
+        echo "<p>Url: " . $lure->url . '</p>';
+    } else {
+        echo 'There is no lure selected yet.';
+    }
+    ?> 
+</p>
 <?php
 /*
  * Lake
  */
 ?>
-<div id ="Lakeonqview"></div>
+<div id ="Lakeonqview">
+    <h2>Lake</h2>
+    <p> <?php
+        if ($catch->lake_id != null) {
+            echo "<p>Town: " . $lake->town . "</p>";
+            echo "<p>Lake: " . $lake->lake_name . '</p>';
+        } else {
+            echo 'There is no lake selected yet.';
+        }
+        ?> 
+    </p>
+</div>
+<?php $this->endWidget(); ?>

@@ -8771,3 +8771,641 @@ in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)
 2014/06/09 23:05:32 [warning] [application] Failed to set unsafe attribute "url" of "Lures".
 in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php (175)
 in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)
+2014/06/09 23:39:25 [error] [php] Trying to get property of non-object (C:\Users\Juho\Dropbox\htdocs\kalaan\protected\views\users\my_profile.php:18)
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(869): UsersController->renderFile()
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(782): UsersController->renderPartial()
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\UsersController.php(58): UsersController->render()
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\actions\CInlineAction.php(49): UsersController->actionMy_profile()
+#4 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CFilterChain.php(133): UsersController->runAction()
+#6 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CInlineFilter.php(58): UsersController->filterAccessControl()
+#9 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(265): UsersController->runActionWithFilters()
+#12 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): UsersController->run()
+#13 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CWebApplication->run()
+REQUEST_URI=/kalaan/index.php/users/my_profile
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\views\users\my_profile.php (18)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\UsersController.php (58)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)
+2014/06/11 20:47:38 [warning] [application] Failed to set unsafe attribute "url" of "Lures".
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php (175)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)
+2014/06/27 18:46:30 [error] [exception.CException] exception 'CException' with message 'Property "Catches.weight" is not defined.' in C:\Users\juho\Dropbox\htdocs\kalaan\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\Users\juho\Dropbox\htdocs\kalaan\framework\db\ar\CActiveRecord.php(145): CComponent->__get('weight')
+#1 C:\Users\juho\Dropbox\htdocs\kalaan\framework\web\helpers\CHtml.php(2529): CActiveRecord->__get('weight')
+#2 C:\Users\juho\Dropbox\htdocs\kalaan\framework\web\helpers\CHtml.php(2252): CHtml::resolveValue(Object(Catches), 'weight')
+#3 C:\Users\juho\Dropbox\htdocs\kalaan\framework\web\helpers\CHtml.php(1514): CHtml::activeInputField('number', Object(Catches), 'weight', Array)
+#4 C:\Users\juho\Dropbox\htdocs\kalaan\protected\views\catches\_fish_form.php(38): CHtml::activeNumberField(Object(Catches), 'weight')
+#5 C:\Users\juho\Dropbox\htdocs\kalaan\framework\web\CBaseController.php(126): require('C:\Users\juho\D...')
+#6 C:\Users\juho\Dropbox\htdocs\kalaan\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Users\juho\D...', Array, true)
+#7 C:\Users\juho\Dropbox\htdocs\kalaan\framework\web\CController.php(869): CBaseController->renderFile('C:\Users\juho\D...', Array, true)
+#8 C:\Users\juho\Dropbox\htdocs\kalaan\protected\views\catches\view.php(72): CController->renderPartial('_fish_form', Array)
+#9 C:\Users\juho\Dropbox\htdocs\kalaan\framework\web\CBaseController.php(126): require('C:\Users\juho\D...')
+#10 C:\Users\juho\Dropbox\htdocs\kalaan\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Users\juho\D...', Array, true)
+#11 C:\Users\juho\Dropbox\htdocs\kalaan\framework\web\CController.php(869): CBaseController->renderFile('C:\Users\juho\D...', Array, true)
+#12 C:\Users\juho\Dropbox\htdocs\kalaan\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#13 C:\Users\juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php(82): CController->render('view', Array)
+#14 [internal function]: CatchesController->actionView('27', NULL)
+#15 C:\Users\juho\Dropbox\htdocs\kalaan\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(CatchesController), Array)
+#16 C:\Users\juho\Dropbox\htdocs\kalaan\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(CatchesController), Object(ReflectionMethod), Array)
+#17 C:\Users\juho\Dropbox\htdocs\kalaan\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\Users\juho\Dropbox\htdocs\kalaan\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 C:\Users\juho\Dropbox\htdocs\kalaan\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\Users\juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): CController->run('view')
+#21 C:\Users\juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController('catches/view')
+#22 C:\Users\juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#23 C:\Users\juho\Dropbox\htdocs\kalaan\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/kalaan/index.php/catches/27
+HTTP_REFERER=http://localhost/kalaan/index.php/users/my_profile
+---
+2014/06/27 18:49:40 [error] [php] Trying to get property of non-object (C:\Users\juho\Dropbox\htdocs\kalaan\protected\views\users\my_profile.php:1)
+Stack trace:
+#0 C:\Users\juho\Dropbox\htdocs\kalaan\framework\web\CController.php(869): UsersController->renderFile()
+#1 C:\Users\juho\Dropbox\htdocs\kalaan\framework\web\CController.php(782): UsersController->renderPartial()
+#2 C:\Users\juho\Dropbox\htdocs\kalaan\protected\controllers\UsersController.php(58): UsersController->render()
+#3 C:\Users\juho\Dropbox\htdocs\kalaan\framework\web\actions\CInlineAction.php(49): UsersController->actionMy_profile()
+#4 C:\Users\juho\Dropbox\htdocs\kalaan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\Users\juho\Dropbox\htdocs\kalaan\framework\web\filters\CFilterChain.php(133): UsersController->runAction()
+#6 C:\Users\juho\Dropbox\htdocs\kalaan\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\Users\juho\Dropbox\htdocs\kalaan\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\Users\juho\Dropbox\htdocs\kalaan\framework\web\filters\CInlineFilter.php(58): UsersController->filterAccessControl()
+#9 C:\Users\juho\Dropbox\htdocs\kalaan\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\Users\juho\Dropbox\htdocs\kalaan\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\Users\juho\Dropbox\htdocs\kalaan\framework\web\CController.php(265): UsersController->runActionWithFilters()
+#12 C:\Users\juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): UsersController->run()
+#13 C:\Users\juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\Users\juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\Users\juho\Dropbox\htdocs\kalaan\index.php(13): CWebApplication->run()
+REQUEST_URI=/kalaan/index.php/users/my_profile
+in C:\Users\juho\Dropbox\htdocs\kalaan\protected\views\users\my_profile.php (1)
+in C:\Users\juho\Dropbox\htdocs\kalaan\protected\controllers\UsersController.php (58)
+in C:\Users\juho\Dropbox\htdocs\kalaan\index.php (13)
+2014/06/27 18:51:22 [error] [exception.CException] exception 'CException' with message 'Property "Catches.weight" is not defined.' in C:\Users\juho\Dropbox\htdocs\kalaan\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\Users\juho\Dropbox\htdocs\kalaan\framework\db\ar\CActiveRecord.php(145): CComponent->__get('weight')
+#1 C:\Users\juho\Dropbox\htdocs\kalaan\framework\validators\CNumberValidator.php(78): CActiveRecord->__get('weight')
+#2 C:\Users\juho\Dropbox\htdocs\kalaan\framework\validators\CValidator.php(213): CNumberValidator->validateAttribute(Object(Catches), 'weight')
+#3 C:\Users\juho\Dropbox\htdocs\kalaan\framework\base\CModel.php(159): CValidator->validate(Object(Catches), NULL)
+#4 C:\Users\juho\Dropbox\htdocs\kalaan\framework\db\ar\CActiveRecord.php(805): CModel->validate(NULL)
+#5 C:\Users\juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php(42): CActiveRecord->save()
+#6 C:\Users\juho\Dropbox\htdocs\kalaan\framework\web\actions\CInlineAction.php(49): CatchesController->actionCreate()
+#7 C:\Users\juho\Dropbox\htdocs\kalaan\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\Users\juho\Dropbox\htdocs\kalaan\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\Users\juho\Dropbox\htdocs\kalaan\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\Users\juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): CController->run('create')
+#11 C:\Users\juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController('catches/create')
+#12 C:\Users\juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\Users\juho\Dropbox\htdocs\kalaan\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/kalaan/index.php/catches/create
+HTTP_REFERER=http://localhost/kalaan/index.php/users/my_profile
+---
+2014/06/27 18:58:43 [warning] [application] Failed to set unsafe attribute "url" of "Lures".
+in C:\Users\juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php (175)
+in C:\Users\juho\Dropbox\htdocs\kalaan\index.php (13)
+2014/07/06 22:40:11 [warning] [application] Failed to set unsafe attribute "url" of "Lures".
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php (175)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)
+2014/07/06 22:41:34 [error] [exception.CException] exception 'CException' with message 'CatchesController has an extra endWidget() call in its view.' in C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CBaseController.php:210
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\protected\views\catches\viewasaquest.php(110): CBaseController->endWidget()
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CBaseController.php(126): require('C:\Users\Juho\D...')
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Users\Juho\D...', Array, true)
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(869): CBaseController->renderFile('C:\Users\Juho\D...', Array, true)
+#4 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(782): CController->renderPartial('viewasaquest', Array, true)
+#5 C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php(100): CController->render('viewasaquest', Array)
+#6 [internal function]: CatchesController->actionViewasaquest('49')
+#7 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(CatchesController), Array)
+#8 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(CatchesController), Object(ReflectionMethod), Array)
+#9 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): CController->run('viewasaquest')
+#13 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController('catches/viewasa...')
+#14 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/kalaan/index.php/catches/viewasaquest/49
+HTTP_REFERER=http://localhost/kalaan/index.php/catches/49
+---
+2014/07/06 23:06:33 [warning] [application] Failed to set unsafe attribute "url" of "Lures".
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php (181)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)
+2014/07/06 23:06:51 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'The CSRF token could not be verified.' in C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CHttpRequest.php:1247
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CComponent.php(561): CHttpRequest->validateCsrfToken(Object(CEvent))
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(207): CComponent->raiseEvent('onBeginRequest', Object(CEvent))
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(178): CApplication->onBeginRequest(Object(CEvent))
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/kalaan/index.php/catches/delete
+HTTP_REFERER=http://localhost/kalaan/index.php/catches/36
+---
+2014/07/06 23:07:01 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'The CSRF token could not be verified.' in C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CHttpRequest.php:1247
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CComponent.php(561): CHttpRequest->validateCsrfToken(Object(CEvent))
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(207): CComponent->raiseEvent('onBeginRequest', Object(CEvent))
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(178): CApplication->onBeginRequest(Object(CEvent))
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/kalaan/index.php/catches/delete
+HTTP_REFERER=http://localhost/kalaan/index.php/catches/36
+---
+2014/07/06 23:07:27 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'The CSRF token could not be verified.' in C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CHttpRequest.php:1247
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CComponent.php(561): CHttpRequest->validateCsrfToken(Object(CEvent))
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(207): CComponent->raiseEvent('onBeginRequest', Object(CEvent))
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(178): CApplication->onBeginRequest(Object(CEvent))
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/kalaan/index.php/catches/delete
+HTTP_REFERER=http://localhost/kalaan/index.php/catches/36
+---
+2014/07/06 23:07:56 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'The CSRF token could not be verified.' in C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CHttpRequest.php:1247
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CComponent.php(561): CHttpRequest->validateCsrfToken(Object(CEvent))
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(207): CComponent->raiseEvent('onBeginRequest', Object(CEvent))
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(178): CApplication->onBeginRequest(Object(CEvent))
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/kalaan/index.php/catches/delete
+HTTP_REFERER=http://localhost/kalaan/index.php/catches/36
+---
+2014/07/06 23:08:30 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'The CSRF token could not be verified.' in C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CHttpRequest.php:1247
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CComponent.php(561): CHttpRequest->validateCsrfToken(Object(CEvent))
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(207): CComponent->raiseEvent('onBeginRequest', Object(CEvent))
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(178): CApplication->onBeginRequest(Object(CEvent))
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/kalaan/index.php/catches/delete
+HTTP_REFERER=http://localhost/kalaan/index.php/catches/36
+---
+2014/07/06 23:11:19 [warning] [application] Failed to set unsafe attribute "url" of "Lures".
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php (182)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)
+2014/07/06 23:13:54 [error] [php] Trying to get property of non-object (C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php:109)
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(286): CatchesController->runAction()
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(265): CatchesController->runActionWithFilters()
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): CatchesController->run()
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CWebApplication->run()
+REQUEST_URI=/kalaan/index.php/catches/delete
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php (109)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)
+2014/07/06 23:14:18 [warning] [application] Failed to set unsafe attribute "url" of "Lures".
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php (185)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)
+2014/07/06 23:14:28 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`kalaan`.`catches`, CONSTRAINT `catches_ibfk_3` FOREIGN KEY (`lure_id`) REFERENCES `lures` (`lure_id`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: DELETE FROM `lures` WHERE `lures`.`lure_id`=13.
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php (119)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)
+2014/07/06 23:14:28 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`kalaan`.`catches`, CONSTRAINT `catches_ibfk_3` FOREIGN KEY (`lure_id`) REFERENCES `lures` (`lure_id`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: DELETE FROM `lures` WHERE `lures`.`lure_id`=13' in C:\Users\Juho\Dropbox\htdocs\kalaan\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\db\ar\CActiveRecord.php(1802): CDbCommand->execute()
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\db\ar\CActiveRecord.php(1222): CActiveRecord->deleteByPk('13')
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php(119): CActiveRecord->delete()
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\actions\CInlineAction.php(49): CatchesController->actionDelete()
+#4 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): CController->run('delete')
+#8 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController('catches/delete')
+#9 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/kalaan/index.php/catches/delete
+HTTP_REFERER=http://localhost/kalaan/index.php/catches/35
+---
+2014/07/06 23:19:48 [warning] [application] Failed to set unsafe attribute "url" of "Lures".
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php (187)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)
+2014/07/07 08:26:48 [error] [php] Undefined index: Fishes (C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php:50)
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(286): CatchesController->runAction()
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(265): CatchesController->runActionWithFilters()
+#4 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): CatchesController->run()
+#5 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CWebApplication->run()
+REQUEST_URI=/kalaan/index.php/catches/createFish/50
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php (50)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)
+2014/07/07 08:29:54 [error] [exception.CException] exception 'CException' with message 'CatchesController cannot find the requested view "_create_lake".' in C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php:878
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php(62): CController->renderPartial('_create_lake', Array)
+#1 [internal function]: CatchesController->actionCreateFish('50')
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(CatchesController), Array)
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(CatchesController), Object(ReflectionMethod), Array)
+#4 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): CController->run('createFish')
+#8 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController('catches/createF...')
+#9 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/kalaan/index.php/catches/createFish/50
+HTTP_REFERER=http://localhost/kalaan/index.php/catches/createFish/50
+---
+2014/07/07 08:34:41 [error] [php] strpos() expects parameter 1 to be string, array given (C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php:706)
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(867): CatchesController->getViewFile()
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(782): CatchesController->renderPartial()
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php(41): CatchesController->render()
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\actions\CInlineAction.php(49): CatchesController->actionCreate()
+#4 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(286): CatchesController->runAction()
+#6 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(265): CatchesController->runActionWithFilters()
+#7 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): CatchesController->run()
+#8 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CWebApplication->run()
+REQUEST_URI=/kalaan/index.php/catches/create
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php (41)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)
+2014/07/07 08:35:50 [error] [php] Undefined variable: fish (C:\Users\Juho\Dropbox\htdocs\kalaan\protected\views\catches\_create_fish.php:18)
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(869): CatchesController->renderFile()
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\protected\views\catches\create.php(2): CatchesController->renderPartial()
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CBaseController.php(126): require()
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CBaseController.php(95): CatchesController->renderInternal()
+#4 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(869): CatchesController->renderFile()
+#5 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(782): CatchesController->renderPartial()
+#6 C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php(41): CatchesController->render()
+#7 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\actions\CInlineAction.php(49): CatchesController->actionCreate()
+#8 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(286): CatchesController->runAction()
+#10 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(265): CatchesController->runActionWithFilters()
+#11 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): CatchesController->run()
+#12 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CWebApplication->run()
+REQUEST_URI=/kalaan/index.php/catches/create
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\views\catches\_create_fish.php (18)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\views\catches\create.php (2)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php (41)
+2014/07/07 08:40:54 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php:336
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): CController->run('createFish')
+#4 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController('catches/createF...')
+#5 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/kalaan/index.php/catches/createFish
+HTTP_REFERER=http://localhost/kalaan/index.php/users/my_profile
+---
+2014/07/07 08:41:24 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php:336
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): CController->run('createFish')
+#4 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController('catches/createF...')
+#5 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/kalaan/index.php/catches/createFish
+HTTP_REFERER=http://localhost/kalaan/index.php/users/my_profile
+---
+2014/07/07 08:41:28 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php:336
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): CController->run('createFish')
+#4 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController('catches/createF...')
+#5 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/kalaan/index.php/catches/createFish
+HTTP_REFERER=http://localhost/kalaan/index.php/users/my_profile
+---
+2014/07/07 08:42:24 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php:336
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): CController->run('createFish')
+#4 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController('catches/createF...')
+#5 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/kalaan/index.php/catches/createFish/create_lake
+HTTP_REFERER=http://localhost/kalaan/index.php/catches/createFish/55
+---
+2014/07/07 08:43:12 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php:336
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): CController->run('createFish')
+#4 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController('catches/createF...')
+#5 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/kalaan/index.php/catches/createFish/create_lake
+HTTP_REFERER=http://localhost/kalaan/index.php/catches/createFish/55
+---
+2014/07/07 08:51:18 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php:336
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): CController->run('createFish')
+#4 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController('catches/createF...')
+#5 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/kalaan/index.php/catches/createFish/createLake
+HTTP_REFERER=http://localhost/kalaan/index.php/catches/createFish/55
+---
+2014/07/07 08:51:43 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php:336
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): CController->run('createFish')
+#4 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController('catches/createF...')
+#5 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/kalaan/index.php/catches/createFish/createLake
+HTTP_REFERER=http://localhost/kalaan/index.php/catches/createFish/55
+---
+2014/07/07 08:51:46 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php:336
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): CController->run('createFish')
+#4 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController('catches/createF...')
+#5 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/kalaan/index.php/catches/createFish/createLake
+HTTP_REFERER=http://localhost/kalaan/index.php/catches/createFish/55
+---
+2014/07/07 08:52:12 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php:336
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): CController->run('createFish')
+#4 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController('catches/createF...')
+#5 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/kalaan/index.php/catches/createFish/createLake
+HTTP_REFERER=http://localhost/kalaan/index.php/catches/createFish/55
+---
+2014/07/07 08:52:34 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php:336
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): CController->run('createFish')
+#4 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController('catches/createF...')
+#5 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/kalaan/index.php/catches/createFish/createLake
+HTTP_REFERER=http://localhost/kalaan/index.php/catches/createFish/55
+---
+2014/07/07 08:52:36 [error] [exception.CException] exception 'CException' with message 'CatchesController cannot find the requested view "create_lake".' in C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php:878
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(782): CController->renderPartial('create_lake', Array, true)
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php(89): CController->render('create_lake', Array)
+#2 [internal function]: CatchesController->actionCreateLake('55')
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(CatchesController), Array)
+#4 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(CatchesController), Object(ReflectionMethod), Array)
+#5 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): CController->run('createLake')
+#9 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController('catches/createL...')
+#10 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/kalaan/index.php/catches/createLake/55
+HTTP_REFERER=http://localhost/kalaan/index.php/catches/createFish/55
+---
+2014/07/07 08:54:00 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php:336
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): CController->run('createLake')
+#4 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController('catches/createL...')
+#5 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/kalaan/index.php/catches/createLake/createLure
+HTTP_REFERER=http://localhost/kalaan/index.php/catches/createLake/55
+---
+2014/07/07 09:04:31 [error] [php] Undefined variable: fish (C:\Users\Juho\Dropbox\htdocs\kalaan\protected\views\catches\create.php:19)
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(869): CatchesController->renderFile()
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(782): CatchesController->renderPartial()
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php(41): CatchesController->render()
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\actions\CInlineAction.php(49): CatchesController->actionCreate()
+#4 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(286): CatchesController->runAction()
+#6 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(265): CatchesController->runActionWithFilters()
+#7 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): CatchesController->run()
+#8 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CWebApplication->run()
+REQUEST_URI=/kalaan/index.php/catches/create
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\views\catches\create.php (19)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php (41)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)
+2014/07/07 09:11:50 [error] [exception.CException] exception 'CException' with message 'UsersController cannot find the requested view "fish_dialog".' in C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php:878
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\protected\views\users\my_profile.php(4): CController->renderPartial('fish_dialog')
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CBaseController.php(126): require('C:\Users\Juho\D...')
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Users\Juho\D...', Array, true)
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(869): CBaseController->renderFile('C:\Users\Juho\D...', Array, true)
+#4 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(782): CController->renderPartial('my_profile', Array, true)
+#5 C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\UsersController.php(58): CController->render('my_profile', Array)
+#6 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\actions\CInlineAction.php(49): UsersController->actionMy_profile()
+#7 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): CController->run('my_profile')
+#16 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController('users/my_profil...')
+#17 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/kalaan/index.php/users/my_profile
+HTTP_REFERER=http://localhost/kalaan/index.php/catches/51
+---
+2014/07/07 09:12:13 [error] [exception.CException] exception 'CException' with message 'UsersController cannot find the requested view "_fish_dialog".' in C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php:878
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\protected\views\users\my_profile.php(4): CController->renderPartial('_fish_dialog')
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CBaseController.php(126): require('C:\Users\Juho\D...')
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Users\Juho\D...', Array, true)
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(869): CBaseController->renderFile('C:\Users\Juho\D...', Array, true)
+#4 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(782): CController->renderPartial('my_profile', Array, true)
+#5 C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\UsersController.php(58): CController->render('my_profile', Array)
+#6 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\actions\CInlineAction.php(49): UsersController->actionMy_profile()
+#7 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): CController->run('my_profile')
+#16 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController('users/my_profil...')
+#17 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/kalaan/index.php/users/my_profile
+HTTP_REFERER=http://localhost/kalaan/index.php/catches/51
+---
+2014/07/07 09:12:41 [error] [exception.CException] exception 'CException' with message 'UsersController cannot find the requested view "_fish_dialog".' in C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php:878
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\protected\views\users\my_profile.php(4): CController->renderPartial('_fish_dialog')
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CBaseController.php(126): require('C:\Users\Juho\D...')
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Users\Juho\D...', Array, true)
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(869): CBaseController->renderFile('C:\Users\Juho\D...', Array, true)
+#4 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(782): CController->renderPartial('my_profile', Array, true)
+#5 C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\UsersController.php(58): CController->render('my_profile', Array)
+#6 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\actions\CInlineAction.php(49): UsersController->actionMy_profile()
+#7 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): CController->run('my_profile')
+#16 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController('users/my_profil...')
+#17 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/kalaan/index.php/users/my_profile
+HTTP_REFERER=http://localhost/kalaan/index.php/catches/51
+---
+2014/07/07 09:12:42 [error] [exception.CException] exception 'CException' with message 'UsersController cannot find the requested view "_fish_dialog".' in C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php:878
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\protected\views\users\my_profile.php(4): CController->renderPartial('_fish_dialog')
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CBaseController.php(126): require('C:\Users\Juho\D...')
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Users\Juho\D...', Array, true)
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(869): CBaseController->renderFile('C:\Users\Juho\D...', Array, true)
+#4 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(782): CController->renderPartial('my_profile', Array, true)
+#5 C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\UsersController.php(58): CController->render('my_profile', Array)
+#6 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\actions\CInlineAction.php(49): UsersController->actionMy_profile()
+#7 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): CController->run('my_profile')
+#16 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController('users/my_profil...')
+#17 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/kalaan/index.php/users/my_profile
+HTTP_REFERER=http://localhost/kalaan/index.php/catches/51
+---
+2014/07/07 09:12:50 [error] [exception.CException] exception 'CException' with message 'UsersController cannot find the requested view "_lake_form".' in C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php:878
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\protected\views\users\my_profile.php(4): CController->renderPartial('_lake_form')
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CBaseController.php(126): require('C:\Users\Juho\D...')
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Users\Juho\D...', Array, true)
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(869): CBaseController->renderFile('C:\Users\Juho\D...', Array, true)
+#4 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(782): CController->renderPartial('my_profile', Array, true)
+#5 C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\UsersController.php(58): CController->render('my_profile', Array)
+#6 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\actions\CInlineAction.php(49): UsersController->actionMy_profile()
+#7 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): CController->run('my_profile')
+#16 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController('users/my_profil...')
+#17 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/kalaan/index.php/users/my_profile
+HTTP_REFERER=http://localhost/kalaan/index.php/catches/51
+---
+2014/07/07 09:14:55 [error] [php] Undefined variable: fish (C:\Users\Juho\Dropbox\htdocs\kalaan\protected\views\users\my_profile.php:33)
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(869): UsersController->renderFile()
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(782): UsersController->renderPartial()
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\UsersController.php(58): UsersController->render()
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\actions\CInlineAction.php(49): UsersController->actionMy_profile()
+#4 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CFilterChain.php(133): UsersController->runAction()
+#6 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CInlineFilter.php(58): UsersController->filterAccessControl()
+#9 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(265): UsersController->runActionWithFilters()
+#12 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): UsersController->run()
+#13 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CWebApplication->run()
+REQUEST_URI=/kalaan/index.php/users/my_profile
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\views\users\my_profile.php (33)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\UsersController.php (58)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)
+2014/07/07 09:15:13 [error] [php] Undefined variable: catch (C:\Users\Juho\Dropbox\htdocs\kalaan\protected\views\users\my_profile.php:28)
+Stack trace:
+#0 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(869): UsersController->renderFile()
+#1 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(782): UsersController->renderPartial()
+#2 C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\UsersController.php(58): UsersController->render()
+#3 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\actions\CInlineAction.php(49): UsersController->actionMy_profile()
+#4 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CFilterChain.php(133): UsersController->runAction()
+#6 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CInlineFilter.php(58): UsersController->filterAccessControl()
+#9 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CController.php(265): UsersController->runActionWithFilters()
+#12 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(282): UsersController->run()
+#13 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\Users\Juho\Dropbox\htdocs\kalaan\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\Users\Juho\Dropbox\htdocs\kalaan\index.php(13): CWebApplication->run()
+REQUEST_URI=/kalaan/index.php/users/my_profile
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\views\users\my_profile.php (28)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\UsersController.php (58)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)
+2014/07/07 09:31:48 [warning] [application] Failed to set unsafe attribute "url" of "Lures".
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php (188)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)
+2014/07/07 09:31:53 [warning] [application] Failed to set unsafe attribute "url" of "Lures".
+in C:\Users\Juho\Dropbox\htdocs\kalaan\protected\controllers\CatchesController.php (188)
+in C:\Users\Juho\Dropbox\htdocs\kalaan\index.php (13)

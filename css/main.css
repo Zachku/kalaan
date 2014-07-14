@@ -2,21 +2,22 @@
 
 a,
 a:link,
-a:visited,
-a:active{
+a:visited{
     color: #35abd9;
     text-decoration: none;
 }
-
+a:active{color: #555;}
 
 
 body
 {
-    margin: 0;
+    margin-top : 20px;
     padding: 0;
     color: #555;
     font-family: Arial, Helvetica, sans-serif;
-    background: #EFEFEF;
+    background: #35abd;
+    background: url('../images/bg.jpg') scroll top transparent no-repeat; height:auto;
+    background-repeat: no-repeat;
 }
 
 #page
@@ -292,12 +293,7 @@ div.search-form
 
 
 
-#maponqview{
-    float:right;
-}
-#imageonqview{
-    float:left;
-}
+
 
 #fishEdit, 
 #lureEdit, 
@@ -310,8 +306,10 @@ div.search-form
 
 #locationEdit
 {
-    margin-left:auto;
-    margin-right:auto;
-    min-width: 500px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#view_actions{
+    float: right;
 }
 

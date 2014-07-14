@@ -4,7 +4,7 @@
      * Yii Google maps extension
      * http://www.yiiframework.com/extension/egmap/
      */
-    Yii::import('ext.egmap.*');
+    Yii::import('application.extensions.EGMap.*');
     $gMap = new EGMap();
     $gMap->setWidth(1150);
     $gMap->setHeight(400);

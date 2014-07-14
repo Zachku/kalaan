@@ -1,12 +1,13 @@
-<h2>Set the catch on map</h2>
+<h2>Add map location</h2>
+<p>Set location by clicking the map. To change location, just drag the marker </p>
 <?php
 /*
  * Yii Google maps extension
  * http://www.yiiframework.com/extension/egmap/
  */
-Yii::import('ext.egmap.*');
+Yii::import('application.extensions.EGMap.*');
 $gMap = new EGMap();
-$gMap->setWidth(1100);
+$gMap->setWidth(1150);
 $gMap->setHeight(300);
 $gMap->zoom = 6;
 $mapTypeControlOptions = array(
